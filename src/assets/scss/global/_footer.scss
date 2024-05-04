@@ -1,18 +1,17 @@
 .footer {
   margin-top: 20px;
-  padding: 40px 0;
+  padding: 60px 20px 20px 20px;
   background-color: $gray-100;
 
 
   &-content {
     @include flex(unset, space-between);
-    padding: 0 4%;
+    padding: 0 5%;
   }
 
   &-item {
     display: flex;
     flex-direction: column;
-    margin: 20px 20px 20px 0;
   }
 
   &-title {
@@ -42,12 +41,11 @@
   }
 
   &-signup {
-    width: 40%;
-    margin: 40px 0 20px 20px;
+    width: 33%;
 
     &__title {
       color: $black;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 32px;
       padding-bottom: 12px;
       font-weight: 400;
@@ -67,7 +65,7 @@
     }
 
     &__input {
-      width: 80%;
+      width: 100%;
       font-size: 16px;
       outline: none;
       padding: 17px 15px;
