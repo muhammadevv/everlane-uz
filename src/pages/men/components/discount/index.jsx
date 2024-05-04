@@ -4,16 +4,16 @@ function Discount() {
   return (
     <section className='discount'>
       {/* <div className="discount-banner">
-        <div className="discount-bg">
-          <img className='discount-bg__img' src="/discount/discount-bg.avif" alt="" />
-        </div>
+          <div className="discount-bg">
+            <img src="/discount/discount-bg.avif" alt="" />
+          </div>
 
-        <div className="discount-banner__content">
-          <p className='discount-banner__subtitle'>Over 600+ styles are on sale. </p>
-          <h1 className='discount-banner__title'>Up to 60% Off</h1>
-          <p className='discount-banner__subtitle'>Shop Now</p>
-        </div>
-      </div> */}
+          <div className="discount-banner__content">
+            <p className='discount-banner__subtitle'>Over 600+ styles are on sale. </p>
+            <h1 className='discount-banner__title'>Up to 60% Off</h1>
+            <p className='discount-banner__subtitle'>Shop Now</p>
+          </div>
+        </div> */}
 
       <div className="discount-content">
         <div className="discount-item">

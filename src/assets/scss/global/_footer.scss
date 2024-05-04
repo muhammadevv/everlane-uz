@@ -6,7 +6,7 @@
 
   &-content {
     @include flex(unset, space-between);
-    padding: 0 72px;
+    padding: 0 4%;
   }
 
   &-item {
@@ -43,7 +43,7 @@
 
   &-signup {
     width: 40%;
-    margin: 20px 0 20px 20px;
+    margin: 40px 0 20px 20px;
 
     &__title {
       color: $black;
@@ -56,7 +56,7 @@
     &__subtitle {
       margin-top: 12px;
       color: $gray-300;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 24px;
       letter-spacing: 0.02em;
     }

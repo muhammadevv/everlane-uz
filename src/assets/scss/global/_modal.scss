@@ -1,0 +1,39 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  &-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &-content {
+    width: 477px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -477px;
+    z-index: 15;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.modal.active,
+.modal-content.active {
+  visibility: visible;
+  opacity: 1;
+  right: 0;
+}

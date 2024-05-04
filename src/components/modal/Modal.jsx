@@ -1,8 +1,14 @@
-import React from 'react'
 
-function Modal() {
+function Modal({ modalOpen, setModalOpen }) {
   return (
-    <div></div>
+    <div className={`modal ${modalOpen && 'active'}`}>
+      <div onClick={() => setModalOpen(false)} className="modal-bg"></div>
+      <div className={`modal-content ${modalOpen && 'active'}`}>
+        <div className="modal-head"></div>
+        <div className="modal-body"></div>
+        <div className="modal-footer"></div>
+      </div>
+    </div>
   )
 }
 

@@ -21,7 +21,7 @@ function Sets() {
           '--swiper-navigation-size': '30px',
 
         }}
-        slidesPerView={4}
+        slidesPerView={4.2}
         slidesPerGroup={2}
         spaceBetween={30}
         loop={true}

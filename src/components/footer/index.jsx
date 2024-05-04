@@ -38,10 +38,10 @@ function Footer() {
           <a className='footer-link' href="#">Our Stores</a>
         </div>
         <div className="footer-signup">
-          <h1 className='footer-signup__title'>Sign up to receive 15% off your first order.</h1>
+          {/* <h1 className='footer-signup__title'>Sign up to receive 15% off your first order.</h1> */}
           <form className='footer-signup__form'>
             <input className='footer-signup__input' placeholder='Email Address' type="email" />
-            <button className='footer-signup__button' type='submit'><RightIcon/></button>
+            <button className='footer-signup__button' type='submit'><RightIcon /></button>
           </form>
           <p className='footer-signup__subtitle'>By providing your email address, you agree to our Privacy Policy and Terms of Service.</p>
         </div>

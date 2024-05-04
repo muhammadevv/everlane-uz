@@ -1,7 +1,7 @@
 import React from 'react'
 import { Banner, Category, Clean, Discount, Info, Report, Sets, Talking } from './components'
 
-function HomePage() {
+function MensPage() {
   return (
     <>
       <Banner />
@@ -16,4 +16,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default MensPage

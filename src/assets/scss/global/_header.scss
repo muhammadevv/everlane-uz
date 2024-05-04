@@ -105,8 +105,8 @@
   top: 54.5px;
   left: 0;
   background-color: $white;
-  // visibility: hidden;
-  // opacity: 0;
+  visibility: hidden;
+  opacity: 0;
   @include trn();
 
 
@@ -132,17 +132,4 @@
   }
 }
 
-// .header-category__items:focus> :has(:focus) .category-dropdown {}
-
-#category-dropdown {
-  opacity: 0;
-  visibility: hidden;
-}
-
-
-
-#category-dropdown:focus {
-  visibility: visible;
-  opacity: 5;
-  color: #fff;
-}
+.header-category__items:hover> :has(:hover) .category-dropdown {}
