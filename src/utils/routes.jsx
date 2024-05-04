@@ -8,13 +8,13 @@ export const routes = [
   },
   {
     id: 2,
-    element: <HomePage />,
-    path: '/womens/',
+    element: <MensPage />,
+    path: '/mens',
   },
   {
     id: 3,
-    element: <MensPage />,
-    path: '/mens/',
+    element: <HomePage />,
+    path: '/womens',
   },
   {
     id: 4,
