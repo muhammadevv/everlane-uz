@@ -1,5 +1,94 @@
 .footer {
   margin-top: 20px;
-  background-color: $white;
+  padding: 40px 0;
+  background-color: $gray-100;
+
+
+  &-content {
+    @include flex(unset, space-between);
+    padding: 0 72px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 0;
+  }
+
+  &-title {
+    color: $black;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+
+  &-link {
+    color: $gray-300;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    @include trn();
+
+    @include hover {
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-signup {
+    width: 40%;
+    margin: 20px 0 20px 20px;
+
+    &__title {
+      color: $black;
+      font-size: 24px;
+      line-height: 32px;
+      padding-bottom: 12px;
+      font-weight: 400;
+    }
+
+    &__subtitle {
+      margin-top: 12px;
+      color: $gray-300;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+    }
+
+    &__form {
+      display: flex;
+      align-items: center;
+    }
+
+    &__input {
+      width: 80%;
+      font-size: 16px;
+      outline: none;
+      padding: 17px 15px;
+      border: 1px solid $gray-200;
+
+      &:focus {
+        border-color: $gray-400;
+      }
+    }
+
+    &__button {
+      padding: 15px 15px;
+      background-color: $black;
+      @include center();
+
+      @include hover() {
+        &:hover svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
 
 }

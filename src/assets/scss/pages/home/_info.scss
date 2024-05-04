@@ -1,0 +1,32 @@
+.info {
+  margin-bottom: 90px;
+
+  &-content {
+    padding: 0 72px;
+    @include flex(center, space-between);
+  }
+
+  &-item {
+    @include center();
+    flex-direction: column;
+
+
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 21px;
+      letter-spacing: .03em;
+      margin: 20px 0;
+    }
+
+    &__subtitle {}
+
+    &__image__img {
+      max-width: 75px;
+      max-height: 91px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

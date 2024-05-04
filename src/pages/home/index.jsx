@@ -1,5 +1,5 @@
 import React from 'react'
-import { Banner, Category, Clean, Discount, Report, Sets, Talking } from './components'
+import { Banner, Category, Clean, Discount, Info, Report, Sets, Talking } from './components'
 
 function HomePage() {
   return (
@@ -11,6 +11,7 @@ function HomePage() {
       <Clean />
       <Talking />
       <Report />
+      <Info/>
     </>
   )
 }

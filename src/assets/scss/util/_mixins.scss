@@ -16,7 +16,7 @@
     @media screen and (max-width: #{$width}px) {
         @content;
     }
-}
+} 
 
 @mixin hover() {
     @media (any-hover:hover) {
