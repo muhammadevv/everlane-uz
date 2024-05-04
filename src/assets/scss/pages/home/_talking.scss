@@ -48,7 +48,7 @@
     max-width: 2399px;
     max-height: 2998px;
     width: 50%;
-    margin-right: 10%;
+    padding-right: 12%;
     @include flex(unset, center);
     flex-direction: column;
   }
