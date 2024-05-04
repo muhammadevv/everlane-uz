@@ -1,11 +1,13 @@
 .talking {
   position: relative;
   margin-bottom: 90px;
-  padding: 0 40px;
+  padding: 0 4%;
+
+  &-parent {}
 
   &-item {
-    max-width: 2240px;
-    max-height: 1253px;
+    max-width: 5520px;
+    max-height: 3300px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,24 +37,33 @@
     }
 
     &__img {
-      max-width: 1875px;
-      max-height: 2342px;
+      max-width: 2642px;
+      max-height: 3332px;
       width: 100%;
       height: 100%;
     }
   }
 
   &-content {
-    max-width: 1823px;
-    width: 44%;
+    max-width: 2399px;
+    max-height: 2998px;
+    width: 50%;
     margin-right: 10%;
     @include flex(unset, center);
     flex-direction: column;
   }
 
   &-image {
-    max-width: 1823px;
-    width: 56%;
-    // margin-left: 20%;
+    max-width: 2642px;
+    max-height: 3332px;
+    width: 50%;
+    height: 100%;
   }
+}
+
+.swiper-wrapper {
+  max-width: 5332;
+  max-height: 3300px;
+  width: 100%;
+  height: 100%;
 }
