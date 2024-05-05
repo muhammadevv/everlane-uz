@@ -7,88 +7,10 @@ function Modal({ modalOpen, setModalOpen }) {
       <div className={`modal-content ${modalOpen && 'active'}`}>
         <button onClick={() => setModalOpen(false)} className="modal-close"><CloseIcon /></button>
         <div className="modal-head">
-          <h2>Your Cart</h2>
+          <h2 className="modal-head__title"> Your Cart</h2>
         </div>
         <div className="modal-body">
-          <div className="modal-product">
-            <div className="modal-product__image">
-              <img src="/modal.avif" alt="" />
-            </div>
-            <div className="modal-product__content">
-              <div className="modal-product__row">
-                <div className="modal-product__text">
-                  <h5 className="modal-product__title">The Organic Cotton Straight-Leg Jean</h5>
-                  <p className="modal-product__subtitle">Size 29x30 | Salt Lake</p>
-                </div>
-                <button className="modal-product__button">
-                  <DeleteIcon />
-                </button>
-              </div>
-              <div className="modal-product__row">
-                <p className="modal-product__price">$263</p>
-                <button>- 1 +</button>
-              </div>
-            </div>
-          </div>
-          <div className="modal-product">
-            <div className="modal-product__image">
-              <img src="/modal.avif" alt="" />
-            </div>
-            <div className="modal-product__content">
-              <div className="modal-product__row">
-                <div className="modal-product__text">
-                  <h5 className="modal-product__title">The Organic Cotton Straight-Leg Jean</h5>
-                  <p className="modal-product__subtitle">Size 29x30 | Salt Lake</p>
-                </div>
-                <button className="modal-product__button">
-                  <DeleteIcon />
-                </button>
-              </div>
-              <div className="modal-product__row">
-                <p className="modal-product__price">$263</p>
-                <button>- 1 +</button>
-              </div>
-            </div>
-          </div><div className="modal-product">
-            <div className="modal-product__image">
-              <img src="/modal.avif" alt="" />
-            </div>
-            <div className="modal-product__content">
-              <div className="modal-product__row">
-                <div className="modal-product__text">
-                  <h5 className="modal-product__title">The Organic Cotton Straight-Leg Jean</h5>
-                  <p className="modal-product__subtitle">Size 29x30 | Salt Lake</p>
-                </div>
-                <button className="modal-product__button">
-                  <DeleteIcon />
-                </button>
-              </div>
-              <div className="modal-product__row">
-                <p className="modal-product__price">$263</p>
-                <button>- 1 +</button>
-              </div>
-            </div>
-          </div>
-          <div className="modal-product">
-            <div className="modal-product__image">
-              <img src="/modal.avif" alt="" />
-            </div>
-            <div className="modal-product__content">
-              <div className="modal-product__row">
-                <div className="modal-product__text">
-                  <h5 className="modal-product__title">The Organic Cotton Straight-Leg Jean</h5>
-                  <p className="modal-product__subtitle">Size 29x30 | Salt Lake</p>
-                </div>
-                <button className="modal-product__button">
-                  <DeleteIcon />
-                </button>
-              </div>
-              <div className="modal-product__row">
-                <p className="modal-product__price">$263</p>
-                <button>- 1 +</button>
-              </div>
-            </div>
-          </div>
+
           <div className="modal-product">
             <div className="modal-product__image">
               <img src="/modal.avif" alt="" />

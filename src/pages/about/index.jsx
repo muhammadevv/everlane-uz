@@ -4,7 +4,7 @@ function AboutPage() {
   return (
     <section className='about'>
       <div className="container">
-        <h1 style={{ textAlign: 'center', marginTop: '12%' }}>This page remonte</h1>
+        <h1 style={{ textAlign: 'center', marginTop: '12%' }}>This page remonte!</h1>
       </div>
     </section>
   )

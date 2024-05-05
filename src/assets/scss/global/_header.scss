@@ -21,15 +21,14 @@
 
 
   &-link {
+    color: $black;
     font-size: 12px;
     padding: 10px 12px;
     border-radius: 8px;
     position: relative;
     @include trn();
 
-    &.active {
-      color: $black;
-    }
+
 
     &::after {
       content: "";
@@ -106,8 +105,9 @@
   top: 54.5px;
   left: 0;
   background-color: $white;
-  visibility: hidden;
-  opacity: 0;
+  // visibility: hidden;
+  // opacity: 0;
+  display: none;
   @include trn();
 
 
@@ -133,4 +133,12 @@
   }
 }
 
-.header-category__items:hover> :has(:hover) .category-dropdown {}
+// .header-category__items:hover> :has(:hover) .category-dropdown {
+//   // opacity: 1;
+//   // visibility: visible;
+//   display: block;
+// }
+
+// .header-category__item:focus .category-dropdown {
+// display: block;
+// }

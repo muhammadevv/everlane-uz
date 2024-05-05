@@ -1,23 +1,22 @@
-import React, { useState } from 'react'
 import { CartIcon, LogoIcon, SearchIcon, UserIcon } from '../../assets/icons'
 import { Link, useLocation } from 'react-router-dom'
 import HeaderCategories from './components/HeaderCategories'
+import { category } from '../../utils/routes'
 
 function Header({ setModalOpen }) {
-  const [active, setActive] = useState(true)
   const location = useLocation()
-  const path = location.pathname.split('').slice(1, 11).join('')
-  console.log(path);
+  const path = location.pathname.split('').slice(0, 11).join('')
   return (
     <>
       <header className='header'>
         <div className="container">
           <div className="header-row">
             <div className="header-nav">
-              <Link className={`header-link ${'mens' === path ? () => setActive(true) === active && 'active' : ''}`} to='/mens'>Men</Link>
-              <Link className={`header-link ${'womens' === path ? () => setActive(true) === active && 'active' : ''}`} to={`/womens`}>Women</Link>
-              <Link className={`header-link ${'about' === path ? () => setActive(true) === active && 'active' : ''}`} to='/about'>About</Link>
-              <Link className={`header-link ${'ever-world' === path ? () => setActive(true) === active && 'active' : ''}`} to='ever-world'>Everworld Stories</Link>
+              {
+                category.map(item => (
+                  <Link key={item.id} className={`header-link ${path === item.slug && 'active'}`} to={`${item.slug}`}>{item.title}</Link>
+                ))
+              }
             </div>
             <div className="header-logo">
               <Link to='/'>
@@ -31,7 +30,7 @@ function Header({ setModalOpen }) {
             </div>
           </div>
         </div>
-      </header>
+      </header >
       <HeaderCategories />
     </>
   )

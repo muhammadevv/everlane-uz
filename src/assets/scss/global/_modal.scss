@@ -1,7 +1,7 @@
 .modal {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
   &-bg {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 12;
@@ -22,7 +22,7 @@
   &-content {
     width: 477px;
     height: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     right: -477px;
     z-index: 15;
@@ -31,7 +31,7 @@
     background-color: #fff;
     transition: all 0.3s ease-in-out;
     overflow-x: scroll;
-    padding: 24px;
+    // padding: 24px 24px 0 24px;
   }
 
   &-close {
@@ -41,22 +41,39 @@
   }
 
   &-head {
-    margin: 32px 0;
-    position: fixed;
     background-color: $white;
+    padding: 32px 24px 24px 24px;
+
+    &__title {
+      color: $black;
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
   }
 
-  &-body {}
+  &-body {
+    flex: 1 1 auto;
+    padding: 24px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 3px
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000;
+      border-radius: 0;
+    }
+  }
 
   &-footer {
-    width: 33.4%;
+    width: 100%;
     height: 144px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    // z-index: 100;
-    padding: 16px 24px;
+    padding: 24px;
     background-color: $white;
+    box-shadow: 0 -6px 18px -8px rgba(0, 0, 0, .25);
+
 
     &__row {
       @include flex(center, space-between);

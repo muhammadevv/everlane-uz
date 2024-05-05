@@ -51,8 +51,8 @@ function HeaderCategories() {
         {
           list.map(item => (
             <div className='header-category__item' key={item.id}>
-              <a id='header-category' className='header-category__item__link' href="#">{item.title}</a>
-              <div id='category-dropdown' className='header-category__dropdown category-dropdown'>
+              <a className='header-category__item__link' href="#">{item.title}</a>
+              <div className='header-category__dropdown category-dropdown'>
                 <div className='category-dropdown__wrapper'>
                   <div className="category-dropdown__content">
                     <p>{item.subtitle}</p>
