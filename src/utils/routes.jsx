@@ -1,4 +1,4 @@
-import { AboutPage, EverWorldPage, HomePage, MensPage, NotFoundPage } from "../pages";
+import { AboutPage, EverWorldPage, HomePage, WomenPage, NotFoundPage } from "../pages";
 
 export const routes = [
   {
@@ -8,12 +8,12 @@ export const routes = [
   },
   {
     id: 2,
-    element: <MensPage />,
+    element: <HomePage />,
     path: '/mens',
   },
   {
     id: 3,
-    element: <HomePage />,
+    element: <WomenPage />,
     path: '/womens',
   },
   {
