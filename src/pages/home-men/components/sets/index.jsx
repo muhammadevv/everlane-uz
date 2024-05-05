@@ -35,7 +35,7 @@ function Sets() {
 
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-1.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-1.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -47,7 +47,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-2.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-2.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -59,7 +59,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-3.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-3.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -71,7 +71,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-4.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-4.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -83,7 +83,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-5.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-5.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -95,7 +95,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-6.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-6.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -107,7 +107,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-7.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-7.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">
@@ -119,7 +119,7 @@ function Sets() {
         </SwiperSlide>
         <SwiperSlide className='sets-item'>
           <div className="sets-item__image">
-            <img className='sets-item__image__img' src="/sets/sets-8.avif" alt="" />
+            <img className='sets-item__image__img' src="/men/sets/sets-8.avif" alt="" />
           </div>
           <div className="sets-item__content">
             <div className="sets-item__row">

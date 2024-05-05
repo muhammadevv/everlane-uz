@@ -5,7 +5,7 @@ function Discount() {
     <section className='discount'>
       {/* <div className="discount-banner">
         <div className="discount-bg">
-          <img className='discount-bg__img' src="/discount/discount-bg.avif" alt="" />
+          <img className='discount-bg__img' src="/men/discount/discount-bg.avif" alt="" />
         </div>
 
         <div className="discount-banner__content">
@@ -18,7 +18,7 @@ function Discount() {
       <div className="discount-content">
         <div className="discount-item">
           <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/discount/discount-1.avif" alt="" />
+            <img className='discount-item__image__img' src="/men/discount/discount-1.avif" alt="" />
           </div>
           <div className="discount-item__content">
             <p className='discount-item__title'>The Line Edit</p>
@@ -27,7 +27,7 @@ function Discount() {
         </div>
         <div className="discount-item">
           <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/discount/discount-2.avif" alt="" />
+            <img className='discount-item__image__img' src="/men/discount/discount-2.avif" alt="" />
           </div>
           <div className="discount-item__content">
             <p className='discount-item__title'>New Arrivals</p>
@@ -36,7 +36,7 @@ function Discount() {
         </div>
         <div className="discount-item">
           <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/discount/discount-3.avif" alt="" />
+            <img className='discount-item__image__img' src="/men/discount/discount-3.avif" alt="" />
           </div>
           <div className="discount-item__content">
             <p className='discount-item__title'>Best-Sellers</p>

@@ -32,7 +32,7 @@ function Talking() {
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
           <div className="talking-image">
-            <img className='talking-item__img' src="/clean/talking-1.avif" alt="" />
+            <img className='talking-item__img' src="/men/clean/talking-1.avif" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide className='talking-item'>
@@ -43,7 +43,7 @@ function Talking() {
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
           <div className="talking-image">
-            <img className='talking-item__img' src="/clean/talking-2.avif" alt="" />
+            <img className='talking-item__img' src="/men/clean/talking-2.avif" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide className='talking-item'>
@@ -54,7 +54,7 @@ function Talking() {
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
           <div className="talking-image">
-            <img className='talking-item__img' src="/clean/talking-3.avif" alt="" />
+            <img className='talking-item__img' src="/men/clean/talking-3.avif" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide className='talking-item'>
@@ -65,7 +65,7 @@ function Talking() {
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
           <div className="talking-image">
-            <img className='talking-item__img' src="/clean/talking-4.avif" alt="" />
+            <img className='talking-item__img' src="/men/clean/talking-4.avif" alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide className='talking-item'>
@@ -76,7 +76,7 @@ function Talking() {
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
           <div className="talking-image">
-            <img className='talking-item__img' src="/clean/talking-5.avif" alt="" />
+            <img className='talking-item__img' src="/men/clean/talking-5.avif" alt="" />
           </div>
         </SwiperSlide>
       </Swiper>

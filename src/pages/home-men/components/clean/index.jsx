@@ -4,7 +4,7 @@ function Clean() {
   return (
     <section className='clean'>
       <div className="clean-bg">
-        <img className='clean-bg__img' src="/clean/clean-bg.avif" alt="" />
+        <img className='clean-bg__img' src="/men/clean/clean-bg.avif" alt="" />
       </div>
       <div className="clean-content">
         <h1 className="clean-title">We're on Mission To Clean Up the Industry</h1>
