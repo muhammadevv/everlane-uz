@@ -4,12 +4,12 @@ function Category() {
   return (
     <section className='categories'>
       <div className="categories-title">
-        <h1 className='categories-title__title'>Shop by Categoty</h1>
+        <h1 className='categories-title__title'>Shop by Category</h1>
       </div>
       <div className="categories-content">
         <div className="categories-item">
           <div className='categories-item__image'>
-            <img className='categories-item__image__img' src="/men/categories/categories-1.avif" alt="" />
+            < img className='categories-item__image__img' src="/men/categories/categories-1.avif" alt="" />
           </div>
           <p className='categories-item__text'>Tops & Tees</p>
         </div>

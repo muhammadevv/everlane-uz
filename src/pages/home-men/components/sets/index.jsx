@@ -6,6 +6,8 @@ import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 function Sets() {
 
+  const width = window.screen.width
+
   return (
     <section className='sets'>
 
@@ -18,11 +20,11 @@ function Sets() {
           '--swiper-navigation-color': '#000',
           '--swiper-pagination-color': '#000',
           '--swiper-pagination-size': '6px',
-          '--swiper-navigation-size': '30px',
+          '--swiper-navigation-size': '20px',
 
         }}
-        slidesPerView={4}
-        slidesPerGroup={2}
+        slidesPerView={width >= 375 ? 4 : 1}
+        slidesPerGroup={width <= 375 ? 1 : 2}
         spaceBetween={30}
         loop={true}
         pagination={{

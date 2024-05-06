@@ -4,7 +4,7 @@ function Category() {
   return (
     <section className='categories'>
       <div className="categories-title">
-        <h1 className='categories-title__title'>Shop by Categoty</h1>
+        <h1 className='categories-title__title'>Shop by Category</h1>
       </div>
       <div className="categories-content">
         <div className="categories-item">
