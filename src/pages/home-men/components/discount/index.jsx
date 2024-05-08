@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getDiscountList } from "../../../../store/actions/homeActions";
 
 function Discount() {
+  const { discount } = useSelector((state) => state.home);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getDiscountList());
+  }, []);
   return (
-    <section className='discount'>
+    <section className="discount">
       {/* <div className="discount-banner">
         <div className="discount-bg">
           <img className='discount-bg__img' src="/men/discount/discount-bg.avif" alt="" />
@@ -16,36 +23,24 @@ function Discount() {
       </div> */}
 
       <div className="discount-content">
-        <div className="discount-item">
-          <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/men/discount/discount-1.avif" alt="" />
+        {discount.list.map((item, i) => (
+          <div className="discount-item" key={i}>
+            <div className="discount-item__image">
+              <img
+                className="discount-item__image__img"
+                src={item.image}
+                alt={item.title}
+              />
+            </div>
+            <div className="discount-item__content">
+              <p className="discount-item__title">{item.title}</p>
+              <button className="discount-item__button">Shop Linen</button>
+            </div>
           </div>
-          <div className="discount-item__content">
-            <p className='discount-item__title'>The Line Edit</p>
-            <button className='discount-item__button'>Shop Linen</button>
-          </div>
-        </div>
-        <div className="discount-item">
-          <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/men/discount/discount-2.avif" alt="" />
-          </div>
-          <div className="discount-item__content">
-            <p className='discount-item__title'>New Arrivals</p>
-            <button className='discount-item__button'>Shop the latest</button>
-          </div>
-        </div>
-        <div className="discount-item">
-          <div className="discount-item__image">
-            <img className='discount-item__image__img' src="/men/discount/discount-3.avif" alt="" />
-          </div>
-          <div className="discount-item__content">
-            <p className='discount-item__title'>Best-Sellers</p>
-            <button className='discount-item__button'>shop your favorites</button>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Discount
+export default Discount;

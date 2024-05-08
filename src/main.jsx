@@ -5,6 +5,7 @@ import './assets/scss/main.scss'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { store } from './store/index.js'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 ReactDOM.createRoot(document.querySelector('.wrapper')).render(
   <BrowserRouter>

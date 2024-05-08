@@ -1,0 +1,93 @@
+.product {
+  margin-top: 30px;
+
+  &-wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  &-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+
+
+    &__img {
+      user-select: none;
+      // pointer-events: none;
+
+      img {
+        max-width: 412px;
+        max-height: 508px;
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+  }
+
+  &-content {
+    flex: 1 1 auto;
+    width: 490px;
+    background: #000;
+  }
+}
+
+.radio {
+  // fill: #000;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+
+}
+
+// .cr-wrapper input[type="radio"]~.cr-input::after {
+//   content: "";
+//   position: absolute;
+//   display: none;
+//   left: 0px;
+//   top: 0px;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 40px;
+//   background: #FF0000;
+// }
+.cr-wrapper input[type="radio"]~.cr-input {
+  position: relative;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.cr-wrapper input[type="radio"]~:checked {
+  border-color: #fff;
+  background: #000;
+}
+
+.cr-wrapper input[type="radio"]~.cr-input>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 44px;
+  width: 44px;
+  background-color: #113081;
+  color: #fff;
+  border-radius: 50%;
+}
+
+// .cr-wrapper input[type="radio"]~.cr-input>span:hover {
+//   background: #fff;
+//   border-color: #113081;
+// }
+
+.cr-wrapper input[type="radio"]~.cr-input>span:checked {
+  background: #fff;
+}
+
+// https://codesandbox.io/p/devbox/swiper-react-scrollbar-yfwstx?file=%2Fsrc%2FApp.jsx%3A19%2C22
