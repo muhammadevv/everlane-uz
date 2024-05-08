@@ -26,19 +26,42 @@ function ProductPage() {
             </div>
           </div>
           <div className="product-content">
-            <div className="product-content__row">
-              <h3>Product name</h3>
-              <p>price</p>
+            <div className="product-content__title">
+              <h3 className='product-title'>The Seersucker Short</h3>
+              <p className='product-title'>$78</p>
             </div>
-            <form>
-              <label htmlFor=""></label>
-              <input className='radio' type="radio" />
-            </form>
-            <label class="cr-wrapper">
-              <input name="radio" type="radio" />
-              <div class="cr-input"><span></span></div>
-            </label>
-            <p>color</p>
+            <div className="product-content__review">
+              sfvsvsvdfv
+            </div>
+            <div className="product-content__col">
+              <p className='product-subtitle'>Color <span>black</span></p>
+              <div className="product-color__buttons">
+                <button className='product-color__button black'></button>
+                <button className='product-color__button grey'></button>
+                <button className='product-color__button red'></button>
+              </div>
+            </div>
+            <div className="product-content__col">
+              <p className='product-subtitle'>Size</p>
+              <div className='product-size__buttons'>
+                <button className='product-size__button'>M</button>
+                <button className='product-size__button'>S</button>
+                <button className='product-size__button'>XL</button>
+              </div>
+            </div>
+            <button className='product-add'>ADD to BAg</button>
+            <div className="product-content__info">
+              <div className="info__item">
+                <img src="" alt="" />
+
+                <div className="col">
+                  <h4>dgs</h4>
+                  <p>ljsjndv</p>
+                </div>
+              </div>
+              <div className="info-item"></div>
+              <div className="info-item"></div>
+            </div>
           </div>
         </div>
       </div>
