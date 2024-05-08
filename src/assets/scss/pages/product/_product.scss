@@ -4,7 +4,7 @@
   &-wrapper {
     display: flex;
     gap: 24px;
-    padding: 40px;
+    padding: 0 40px;
   }
 
   &-images {
@@ -12,6 +12,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
+    flex: 1 1 auto;
 
 
     &__img {
@@ -29,104 +30,140 @@
   }
 
   &-content {
-    width: 490px;
+    width: 440px;
 
-
-
-    &__title {
+    &__row {
       @include flex(center, space-between);
     }
 
-    &__review {
+    &__head {
+      display: flex;
+      flex-direction: column;
       padding-bottom: 10px;
       margin-bottom: 10px;
       border-bottom: 1px solid $gray-100;
     }
 
-  }
-
-  &-title {
-    color: $black;
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-
-  &-subtitle {
-    color: $black;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-
-  &-color__buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-
-  &-size__buttons {
-    display: flex;
-    gap: 5px;
-    // margin-bottom: 10px;
-  }
-
-  &-color__button {
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border-radius: 50%;
-
-    &.black {
-      background-color: black;
-    }
-
-    &.white {
-      background-color: white;
-    }
-
-    &.red {
-      background-color: red;
-    }
-
-    &.grey {
-      background-color: gray;
+    &__info {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      border-top: 1px solid $gray-100;
     }
   }
 
-  &-size__button {
-    width: 40px;
-    height: 40px;
-    border: 1px solid $gray-100;
-    background-color: $gray-100;
-    @include trn();
+  &-head {
+    &__title {
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
 
-    @include hover() {
-      &:hover {
-        border: 1px solid $black;
+  &-content {
+
+    &__title {
+      color: $black;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    &__color {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+
+      &_button {
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border-radius: 50%;
+
+        &.black {
+          background-color: black;
+        }
+
+        &.white {
+          background-color: white;
+        }
+
+        &.red {
+          background-color: red;
+        }
+
+        &.grey {
+          background-color: gray;
+        }
       }
+    }
 
+    &__size {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
 
+      &_button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $gray-100;
+        background-color: $gray-100;
+        @include trn();
+
+        @include hover() {
+          &:hover {
+            border: 1px solid $black;
+          }
+        }
+      }
+    }
+
+    &__button {
+      padding: 0 10px;
+
+      &_add {
+        width: 100%;
+        height: 50px;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 30px 0;
+        background-color: $black;
+        @include trn();
+
+        @include hover() {
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
     }
   }
 
-  &-add {
-    width: 100%;
-    height: 50px;
-    color: $white;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 40px;
-    background-color: $black;
-    opacity: 0.8;
-    margin-bottom: 20px;
-    @include trn();
+  &-info {
+    &__item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
-    @include hover() {
-      &:hover {
-        opacity: 1;
-      }
+    &__title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      color: $black;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      color: $black;
     }
   }
 
