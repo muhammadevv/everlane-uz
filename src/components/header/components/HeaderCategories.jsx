@@ -1,68 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link, useParams } from 'react-router-dom'
+import { getMenCollectionsList } from '../../../store/actions/homeActions'
 
 function HeaderCategories() {
+  const { menCollections } = useSelector(state => state.home)
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getMenCollectionsList())
+  }, [])
 
-  const list = [
-    {
-      id: 1,
-      title: 'New Arrivals',
-      subtitle: 'New Arrivals'
-    },
-    {
-      id: 2,
-      title: 'Best-sellers',
-      subtitle: 'Best-sellers'
-    },
-    {
-      id: 3,
-      title: 'Clothing',
-      subtitle: 'Clothing'
-    },
-    {
-      id: 4,
-      title: 'Top & Sweaters',
-      subtitle: 'Top & Sweaters'
-    },
-    {
-      id: 5,
-      title: 'Pants & Jeans',
-      subtitle: 'Pants & Jeans'
-    },
-    {
-      id: 6,
-      title: 'Outerwear',
-      subtitle: 'Outerwear'
-    },
-    {
-      id: 7,
-      title: 'Shoes & Bags',
-      subtitle: 'Shoes & Bags'
-    },
-    {
-      id: 8,
-      title: 'Sale',
-      subtitle: 'Sale'
-    },
-  ]
 
   return (
     <div className='header-category'>
       <div className="header-category__items">
         {
-          list.map(item => (
+          menCollections.list.map(item => (
             <div className='header-category__item' key={item.id}>
-              <a className='header-category__item__link' href="#">{item.title}</a>
-              <div className='header-category__dropdown category-dropdown'>
-                <div className='category-dropdown__wrapper'>
-                  <div className="category-dropdown__content">
-                    <p>{item.subtitle}</p>
-                    <p>{item.subtitle}</p>
-                    <p>{item.subtitle}</p>
-                    <p>{item.subtitle}</p>
-                  </div>
-                </div>
-                <div className='category-dropdown__bg'></div>
-              </div>
+              <Link to={`/collections/${item.slug}-${item.id}`} className='header-category__item__link'>{item.title}</Link>
             </div>
           ))
         }

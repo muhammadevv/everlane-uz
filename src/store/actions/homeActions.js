@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import Axios from "../../api";
-import { bannerList, categoryList, discountList, setsList } from "../../utils/urls";
+import { bannerList, categoryList, discountList, menCollectionsList, productsList, setsList } from "../../utils/urls";
 
 export const getBannerList = createAsyncThunk('banner', async () => {
   let response = await Axios.get(bannerList)
@@ -19,5 +19,15 @@ export const getDiscountList = createAsyncThunk('discount', async () => {
 
 export const getSetsList = createAsyncThunk('sets', async () => {
   let response = await Axios.get(setsList)
+  return response.data
+})
+
+export const getMenCollectionsList = createAsyncThunk('menCollections', async () => {
+  let response = await Axios.get(menCollectionsList)
+  return response.data
+})
+
+export const getProductsList = createAsyncThunk('products', async () => {
+  let response = await Axios.get(productsList)
   return response.data
 })

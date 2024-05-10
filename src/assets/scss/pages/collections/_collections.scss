@@ -3,5 +3,15 @@
 
   &-wrapper {
     display: flex;
+    margin-top: 32px;
+    // gap: 20px;
+  }
+
+  &-aside {
+    width: 20%;
+  }
+
+  &-main {
+    width: 80%;
   }
 }

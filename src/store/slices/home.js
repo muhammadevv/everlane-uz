@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit"
 import { buildBuilder } from "../../utils/helpers"
-import { getBannerList, getCategoryList, getDiscountList, getSetsList } from "../actions/homeActions"
+import { getBannerList, getCategoryList, getDiscountList, getMenCollectionsList, getSetsList } from "../actions/homeActions"
 
 const initialState = {
   banner: {
@@ -12,11 +12,15 @@ const initialState = {
     loading: false
   },
   discount: {
-    list : [],
+    list: [],
     loading: false
   },
   sets: {
-    list : [],
+    list: [],
+    loading: false
+  },
+  menCollections: {
+    list: [],
     loading: false
   }
 }
@@ -30,6 +34,7 @@ const homeSlice = createSlice({
     buildBuilder(builder, getCategoryList, 'category')
     buildBuilder(builder, getDiscountList, 'discount')
     buildBuilder(builder, getSetsList, 'sets')
+    buildBuilder(builder, getMenCollectionsList, 'menCollections')
   }
 })
 

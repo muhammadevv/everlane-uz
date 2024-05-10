@@ -1,22 +1,70 @@
 import React from 'react'
 
 function Aside() {
-
   return (
-    <aside className='collections-aside'>
-      <div className="aside-head">
-        <p className='aside-head__toptitle'>
-          <a href="#">Home</a> /
-          <a href="#">Men</a>
-        </p>
-        <h1 className='aside-head__title'>
-          Shop All Mne's Clothing & Apparel
-        </h1>
+    <div className='collections-aside'>
+      <div className="aside-head"><p>100 Products</p></div>
+      <div className="aside-content">
+        <form className='collections-aside__category'>
+          <label className="callections-aside__label custom-checkbox">
+            <input name='dummy' type="checkbox" />
+            <span className="checkmark"></span>
+            <span>Knit Tops</span>
+          </label>
+
+        </form>
+        <form className='collections-aside__color'>
+          <div className="form-item">
+            <input id='black' name='black' type="radio" />
+            <label htmlFor="black">Black</label>
+          </div>
+          <div className="form-item">
+            <input id='blue' name='blue' type="radio" />
+            <label htmlFor="blue">Blue</label>
+          </div>
+          <div className="form-item">
+            <input id='brown' name='brown ' type="radio" />
+            <label htmlFor="brown">Brown</label>
+          </div>
+          <div className="form-item">
+            <input id='green' name='green' type="radio" />
+            <label htmlFor="green">Green</label>
+          </div>
+          <div className="form-item">
+            <input id='grey' type="radio" />
+            <label htmlFor="grey">Grey</label>
+          </div>
+          <div className="form-item">
+            <input id='orange' name='orange' type="radio" />
+            <label htmlFor="orange">Orange</label>
+          </div>
+          <div className="form-item">
+            <input id='pink' name='pink' type="radio" />
+            <label htmlFor="pink">Pink</label>
+          </div>
+          <div className="form-item">
+            <input id='purple' name='purple' type="radio" />
+            <label htmlFor="purple">Purple</label>
+          </div>
+          <div className="form-item">
+            <input id='red' name='red' type="radio" />
+            <label htmlFor="red">Red</label>
+          </div>
+          <div className="form-item">
+            <input id='tan' name='tan' type="radio" />
+            <label htmlFor="tan">Tan</label>
+          </div>
+          <div className="form-item">
+            <input id='white' name='white' type="radio" />
+            <label htmlFor="white">White</label>
+          </div>
+          <div className="form-item">
+            <input id='yellow' name='yellow' type="radio" />
+            <label htmlFor="yellow">Yellow</label>
+          </div>
+        </form>
       </div>
-      <div className="aside-products">
-        <div className="aside-product"></div>
-      </div>
-    </aside>
+    </div>
   )
 }
 

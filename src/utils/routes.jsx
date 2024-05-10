@@ -34,7 +34,7 @@ export const routes = [
   {
     id: 7,
     element: <Collections />,
-    path: '/collections',
+    path: '/collections/:id',
   },
   {
     id: 6,
