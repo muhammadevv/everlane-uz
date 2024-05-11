@@ -11,7 +11,6 @@ function ProductPage() {
     dispatch(productGet(id))
   }, [])
 
-  console.log(product);
 
   return (
     <div className='product'>
