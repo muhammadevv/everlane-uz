@@ -33,7 +33,7 @@
     width: 440px;
 
     &__row {
-      @include flex(center, space-between);
+      @include flex(unset, space-between);
     }
 
     &__head {
@@ -59,6 +59,7 @@
       font-size: 24px;
       font-weight: 400;
       margin-bottom: 10px;
+      line-height: 130%;
     }
   }
 
@@ -85,15 +86,12 @@
         &.black {
           background-color: black;
         }
-
-        &.white {
-          background-color: white;
+        &.deep.blue {
+          background-color: #2e5283;
         }
-
-        &.red {
-          background-color: red;
+        &.beech {
+          background-color: #5b4f3b;
         }
-
         &.grey {
           background-color: gray;
         }
@@ -121,7 +119,6 @@
     }
 
     &__button {
-      padding: 0 10px;
 
       &_add {
         width: 100%;

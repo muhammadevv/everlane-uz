@@ -15,7 +15,7 @@ const initialState = {
 }
 
 const ProductsSlice = createSlice({
-  name: 'products',
+  name: 'menProducts',
   initialState,
   extraReducers: (builder) => {
     buildBuilder(builder, getProducts, 'products')

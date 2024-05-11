@@ -1,58 +1,62 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BoxIcon, CarIcon, GiftIcon } from '../../assets/icons'
+import { useDispatch, useSelector } from 'react-redux'
+import { productGet } from '../../store/actions/productActions'
+import { useParams } from 'react-router-dom'
 function ProductPage() {
+  const { product } = useSelector(state => state.product)
+  const dispatch = useDispatch()
+  const { id } = useParams()
+  useEffect(() => {
+    dispatch(productGet(id))
+  }, [])
+
+  console.log(product);
 
   return (
     <div className='product'>
       <div className="container">
         <div className="product-wrapper">
           <div className="product-images">
-            <div className="product-images__img">
-              <img src="/men/categories/categories-1.avif" alt="" />
-            </div>
-            <div className="product-images__img">
-              <img src="/men/categories/categories-2.avif" alt="" />
-            </div>
-            <div className="product-images__img">
-              <img src="/men/categories/categories-3.avif" alt="" />
-            </div>
-            <div className="product-images__img">
-              <img src="/men/categories/categories-4.avif" alt="" />
-            </div>
-            <div className="product-images__img">
-              <img src="/men/categories/categories-5.avif" alt="" />
-            </div>
-            <div className="product-images__img">
-              <img src="/men/categories/categories-6.avif" alt="" />
-            </div>
+            {
+              product.images?.map((img, i) => (
+                <div key={i} className="product-images__img">
+                  <img src={img} alt={product.title} />
+                </div>
+              ))
+            }
           </div>
           <div className="product-content">
             <div className="product-content__head">
               <div className="product-content__row">
-                <h3 className='product-head__title'>The Seersucker Short</h3>
-                <p className='product-head__title'>$78</p>
+                <h3 className='product-head__title'>{product.title}</h3>
+                <p className='product-head__title'>${product.price}</p>
               </div>
-              <p><span>⭐⭐⭐⭐⭐</span> No review yet</p>
+              <p><span>⭐⭐⭐⭐⭐</span>({product.review}) review </p>
             </div>
             <div className="product-content__content">
               <div className="product-content__col">
                 <p className='product-content__title'>Color <span>black</span></p>
                 <div className="product-content__color">
-                  <button className='product-content__color_button black'></button>
-                  <button className='product-content__color_button grey'></button>
-                  <button className='product-content__color_button red'></button>
+                  {
+                    product.colors?.map((color, i) => (
+                      <button key={i} className={`product-content__color_button ${color.toLowerCase()}`}></button>
+                    ))
+                  }
                 </div>
               </div>
               <div className="product-content__col">
                 <p className='product-content__title'>Size</p>
                 <div className='product-content__size'>
-                  <button className='product-content__size_button'>M</button>
-                  <button className='product-content__size_button'>S</button>
-                  <button className='product-content__size_button'>XL</button>
+                  {
+                    product.sizes?.map((size, i) => (
+                      <button key={i} className='product-content__size_button'>{size}</button>
+                    ))
+                  }
                 </div>
               </div>
               <div className='product-content__button'>
-                <button className='product-content__button_add'>ADD to BAg</button>
+                <button className='product-content__button_add'>ADD to BAG</button>
               </div>
             </div>
             <div className="product-content__info">

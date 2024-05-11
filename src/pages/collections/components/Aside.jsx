@@ -1,68 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-function Aside() {
+function Aside({ collections, products }) {
   return (
     <div className='collections-aside'>
-      <div className="aside-head"><p>100 Products</p></div>
+      <div className="aside-head"><p>{products.list.length} Products</p></div>
       <div className="aside-content">
-        <form className='collections-aside__category'>
-          <label className="callections-aside__label custom-checkbox">
-            <input name='dummy' type="checkbox" />
-            <span className="checkmark"></span>
-            <span>Knit Tops</span>
-          </label>
-
-        </form>
-        <form className='collections-aside__color'>
-          <div className="form-item">
-            <input id='black' name='black' type="radio" />
-            <label htmlFor="black">Black</label>
-          </div>
-          <div className="form-item">
-            <input id='blue' name='blue' type="radio" />
-            <label htmlFor="blue">Blue</label>
-          </div>
-          <div className="form-item">
-            <input id='brown' name='brown ' type="radio" />
-            <label htmlFor="brown">Brown</label>
-          </div>
-          <div className="form-item">
-            <input id='green' name='green' type="radio" />
-            <label htmlFor="green">Green</label>
-          </div>
-          <div className="form-item">
-            <input id='grey' type="radio" />
-            <label htmlFor="grey">Grey</label>
-          </div>
-          <div className="form-item">
-            <input id='orange' name='orange' type="radio" />
-            <label htmlFor="orange">Orange</label>
-          </div>
-          <div className="form-item">
-            <input id='pink' name='pink' type="radio" />
-            <label htmlFor="pink">Pink</label>
-          </div>
-          <div className="form-item">
-            <input id='purple' name='purple' type="radio" />
-            <label htmlFor="purple">Purple</label>
-          </div>
-          <div className="form-item">
-            <input id='red' name='red' type="radio" />
-            <label htmlFor="red">Red</label>
-          </div>
-          <div className="form-item">
-            <input id='tan' name='tan' type="radio" />
-            <label htmlFor="tan">Tan</label>
-          </div>
-          <div className="form-item">
-            <input id='white' name='white' type="radio" />
-            <label htmlFor="white">White</label>
-          </div>
-          <div className="form-item">
-            <input id='yellow' name='yellow' type="radio" />
-            <label htmlFor="yellow">Yellow</label>
-          </div>
-        </form>
+        <div className='aside-content__category'>
+          <h4 className='aside-category__title'>Category</h4>
+          <ul className='aside-category__content'>
+            {
+              collections.list.map(item => (
+                <li key={item.id} className='aside-category__link'>
+                  <Link to={`/collections/${item.slug}-${item.id}`} key={item.id}>
+                    {item.title}
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
       </div>
     </div>
   )

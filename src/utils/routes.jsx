@@ -29,7 +29,7 @@ export const routes = [
   {
     id: 6,
     element: <ProductPage />,
-    path: '/products',
+    path: '/product/:id',
   },
   {
     id: 7,

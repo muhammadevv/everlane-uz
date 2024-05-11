@@ -1,7 +1,7 @@
 import { CartIcon, LogoIcon, SearchIcon, UserIcon } from '../../assets/icons'
 import { Link, useLocation } from 'react-router-dom'
-import HeaderCategories from './components/HeaderCategories'
 import { category } from '../../utils/routes'
+import Categories from '../categories/Categories'
 
 function Header({ setModalOpen }) {
   const location = useLocation()
@@ -31,7 +31,8 @@ function Header({ setModalOpen }) {
           </div>
         </div>
       </header >
-      <HeaderCategories />
+      <Categories />
+
     </>
   )
 }

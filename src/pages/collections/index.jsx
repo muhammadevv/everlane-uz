@@ -14,14 +14,17 @@ function Collections() {
     dispatch(getProducts(menId))
     dispatch(getCollections())
   }, [])
-
+  useEffect(() => {
+    dispatch(getProducts(menId))
+  }, [menId])
+  const title = collections.list.find(item => item.id === menId)?.title
 
   return (
     <div className='collections'>
       <div className="container">
         <div className="collections-wrapper">
-          <Aside />
-          <Main />
+          <Aside collections={collections} products={products} />
+          <Main collections={collections} products={products} title={title} />
         </div>
       </div>
     </div>
