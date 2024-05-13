@@ -6,6 +6,8 @@ function Modal({ modalOpen, setModalOpen }) {
   const { items } = useSelector(state => state.cart)
   const dispatch = useDispatch()
 
+  const subtotal = items.reduce((a, b) => a + (b.price * b.qty), 0)
+
   const handleDelete = (id) => {
     dispatch(removeCart(id))
   }
@@ -44,7 +46,7 @@ function Modal({ modalOpen, setModalOpen }) {
                     </button>
                   </div>
                   <div className="modal-product__row">
-                    <p className="modal-product__price">$263</p>
+                    <p className="modal-product__price">${item.price}</p>
                     <div className="counter">
                       <button onClick={() => handleDecrement(item.id)} className="counter-button">-</button>
                       <span className="counter-text">{item.qty}</span>
@@ -59,8 +61,8 @@ function Modal({ modalOpen, setModalOpen }) {
         </div>
         <div className="modal-footer">
           <div className="modal-footer__row">
-            <p className="modal-footer__price">Subtotal<span className="modal-footer__price__span"> (2 items)</span></p>
-            <p className="modal-footer__price">$123</p>
+            <p className="modal-footer__price">Subtotal<span className="modal-footer__price__span"> {` (${items.length}  Item${items.length > 1 ? 's' : ''})`}</span></p>
+            <p className="modal-footer__price">${subtotal}</p>
           </div>
           <button className="modal-footer__button">ceackout</button>
           <p className="modal-footer__text">Psst, get it now before it sells out.</p>
