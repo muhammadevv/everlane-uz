@@ -58,11 +58,25 @@
     margin: 8px 0;
     border-radius: 8px;
     @include trn();
+    position: relative;
 
     @include hover() {
       &:hover {
         background-color: $gray-100;
       }
+    }
+
+    &__span {
+      color: $white;
+      width: 14px;
+      height: 14px;
+      font-size: 9px;
+      border-radius: 50%;
+      background-color: $black;
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include center();
     }
   }
 

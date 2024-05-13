@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { addCart } from "../../../store/slices/cart";
 
 function Main({ collections, products, title }) {
-  const dispatch = useDispatch()
 
-  const handleAddCart = () => {
-    dispatch(addCart(products))
+  const dispatch = useDispatch()
+  const handleAddCart = (product) => {
+    dispatch(addCart(product))
   }
   
-  console.log();
   return (
     <main className='collections-main'>
       <div className="main-head">
@@ -25,10 +24,8 @@ function Main({ collections, products, title }) {
                 <Link to={`/product/${item.slug}`}>
                   <img src={item.list.image} alt={item.title} />
                 </Link>
-                <button onClick={handleAddCart} className="main-product__cart">Quick add</button>
+                <button onClick={() => handleAddCart(item)} className="main-product__cart">Quick add</button>
               </div>
-
-
               <div className="main-product__content">
                 <div className="main-product__text">
                   <div className="main-product__row">

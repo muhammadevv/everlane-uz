@@ -194,3 +194,30 @@
   opacity: 1;
   right: 0;
 }
+
+.counter {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border: 1px solid #dee2e7;
+}
+
+.counter-button {
+  width: 24px;
+  height: 26px;
+  font-size: 16px;
+  background-color: $white;
+  border: 1px solid $white;
+
+  @include hover() {
+    &:hover {
+      background-color: $gray-100;
+      border: 1px solid $gray-500;
+    }
+  }
+}
+
+.counter-text {
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -3,13 +3,20 @@ import { BoxIcon, CarIcon, GiftIcon } from '../../assets/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { productGet } from '../../store/actions/productActions'
 import { useParams } from 'react-router-dom'
+import { addCart } from '../../store/slices/cart'
 function ProductPage() {
   const { product } = useSelector(state => state.product)
   const dispatch = useDispatch()
   const { id } = useParams()
+
   useEffect(() => {
     dispatch(productGet(id))
   }, [])
+
+  const handleAddCart = () => {
+    dispatch(addCart(product))
+  }
+
 
 
   return (
@@ -55,7 +62,7 @@ function ProductPage() {
                 </div>
               </div>
               <div className='product-content__button'>
-                <button className='product-content__button_add'>ADD to BAG</button>
+                <button onClick={handleAddCart} className='product-content__button_add'>ADD to BAG</button>
               </div>
             </div>
             <div className="product-content__info">

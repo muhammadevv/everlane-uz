@@ -26,12 +26,13 @@ function Sets() {
           "--swiper-pagination-size": "6px",
           "--swiper-navigation-size": "20px",
         }}
-        slidesPerView={width >= 375 ? 4 : 1}
-        slidesPerGroup={width <= 375 ? 1 : 2}
         spaceBetween={30}
+        slidesPerGroup={width <= 375 ? 1 : 2}
+        slidesPerView={width >= 375 ? 4 : 1}
         loop={true}
         pagination={{
-          clickable: true,
+          clickable: true
+
         }}
         navigation={true}
         modules={[Pagination, Navigation]}

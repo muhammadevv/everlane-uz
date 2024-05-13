@@ -1,11 +1,22 @@
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { CloseIcon, DeleteIcon } from "../../assets/icons"
+import { decrement, increment, removeCart } from "../../store/slices/cart"
 
 function Modal({ modalOpen, setModalOpen }) {
   const { items } = useSelector(state => state.cart)
+  const dispatch = useDispatch()
 
-  // console.log(items);
-  // console.log({ list });
+  const handleDelete = (id) => {
+    dispatch(removeCart(id))
+  }
+
+  const handleIncrement = (id) => {
+    dispatch(increment(id))
+  }
+
+  const handleDecrement = (id) => {
+    dispatch(decrement(id))
+  }
 
   return (
     <div className={`modal ${modalOpen && 'active'}`}>
@@ -17,28 +28,32 @@ function Modal({ modalOpen, setModalOpen }) {
         </div>
         <div className="modal-body">
           {
-            // items.list?.map(item => (
-            //   <div key={item.id} className="modal-product">
-            //     <div className="modal-product__image">
-            //       <img src={item.list.image} alt="" />
-            //     </div>
-            //     <div className="modal-product__content">
-            //       <div className="modal-product__row">
-            //         <div className="modal-product__text">
-            //           <h5 className="modal-product__title">{item.title}</h5>
-            //           <p className="modal-product__subtitle">{`${item.list.size} | ${item.list.size}`}</p>
-            //         </div>
-            //         <button className="modal-product__button">
-            //           <DeleteIcon />
-            //         </button>
-            //       </div>
-            //       <div className="modal-product__row">
-            //         <p className="modal-product__price">$263</p>
-            //         <button>- 1 +</button>
-            //       </div>
-            //     </div>
-            //   </div>
-            // ))
+            items.map((item, i) => (
+              <div key={i} className="modal-product">
+                <div className="modal-product__image">
+                  <img src={item?.list?.image} alt={item.title} />
+                </div>
+                <div className="modal-product__content">
+                  <div className="modal-product__row">
+                    <div className="modal-product__text">
+                      <h5 className="modal-product__title">{item.title}</h5>
+                      <p className="modal-product__subtitle">{`${item?.list?.size} | ${item?.list?.color}`}</p>
+                    </div>
+                    <button onClick={() => handleDelete(item.id)} className="modal-product__button">
+                      <DeleteIcon />
+                    </button>
+                  </div>
+                  <div className="modal-product__row">
+                    <p className="modal-product__price">$263</p>
+                    <div className="counter">
+                      <button onClick={() => handleDecrement(item.id)} className="counter-button">-</button>
+                      <span className="counter-text">{item.qty}</span>
+                      <button onClick={() => handleIncrement(item.id)} className="counter-button">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
           }
 
         </div>

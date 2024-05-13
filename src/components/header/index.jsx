@@ -2,8 +2,10 @@ import { CartIcon, LogoIcon, SearchIcon, UserIcon } from '../../assets/icons'
 import { Link, useLocation } from 'react-router-dom'
 import { category } from '../../utils/routes'
 import Categories from '../categories/Categories'
+import { useSelector } from 'react-redux'
 
 function Header({ setModalOpen }) {
+  const { items } = useSelector(state => state.cart)
   const location = useLocation()
   const path = location.pathname.split('').slice(0, 11).join('')
   return (
@@ -26,7 +28,11 @@ function Header({ setModalOpen }) {
             <div className="header-buttons">
               <button className='header-button'><SearchIcon /></button>
               <button className='header-button'><UserIcon /></button>
-              <button onClick={() => setModalOpen(true)} className='header-button'><CartIcon /></button>
+              <button onClick={() => setModalOpen(true)} className='header-button'><CartIcon />
+                {
+                  items.length > 0 && <span className='header-button__span'>{items.length}</span> 
+                }
+              </button>
             </div>
           </div>
         </div>
