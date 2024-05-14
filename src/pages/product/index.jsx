@@ -13,7 +13,7 @@ function ProductPage() {
     dispatch(productGet(id))
   }, [])
 
-  const handleAddCart = () => {
+  const handleAddCart = (product) => {
     dispatch(addCart(product))
   }
 
@@ -62,7 +62,7 @@ function ProductPage() {
                 </div>
               </div>
               <div className='product-content__button'>
-                <button onClick={handleAddCart} className='product-content__button_add'>ADD to BAG</button>
+                <button onClick={() => handleAddCart(product)} className='product-content__button_add'>ADD to BAG</button>
               </div>
             </div>
             <div className="product-content__info">

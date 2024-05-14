@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-item">
           <h3 className='footer-title'>Account</h3>
           <a className='footer-link' href="#">Log In</a>
-          <a className='footer-link' href="#">Sign Yp</a>
+          <a className='footer-link' href="#">Sign Up</a>
           <a className='footer-link' href="#">Redeem a Gift Card</a>
         </div>
         <div className="footer-item">
