@@ -8,10 +8,10 @@
   }
 
   &-aside {
-    width: 20%;
+    width: 200px;
   }
 
   &-main {
-    width: 80%;
+    width: calc(100% - 200px);
   }
 }

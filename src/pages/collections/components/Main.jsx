@@ -2,13 +2,13 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addCart } from "../../../store/slices/cart";
 
-function Main({ collections, products, title }) {
+function Main({ products, title }) {
 
   const dispatch = useDispatch()
   const handleAddCart = (product) => {
     dispatch(addCart(product))
   }
-  
+
   return (
     <main className='collections-main'>
       <div className="main-head">

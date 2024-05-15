@@ -1,7 +1,6 @@
 .collections {
 
   &-main {
-    width: 60%;
     display: flex;
     flex-direction: column;
   }
@@ -30,11 +29,12 @@
     flex: 1 1 auto;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   &-product {
-    max-width: 362px;
-    max-height: 572px;
+    max-width: 356px;
+    max-height: 540px;
     width: 100%;
     height: 100%;
     position: relative;
@@ -44,6 +44,10 @@
     }
 
     &__image {
+      max-width: 356px;
+      max-height: 450px;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       position: relative;
 
@@ -54,12 +58,11 @@
       }
 
       img {
-        max-width: 362px;
-        max-height: 572px;
+        max-width: 360px;
+        max-height: 450px;
         width: 100%;
         height: 100%;
       }
-
     }
 
     &__title {
@@ -91,6 +94,7 @@
       left: 0;
       background-color: $white;
       text-transform: uppercase;
+      z-index: 100;
       opacity: 0;
       visibility: hidden;
       @include trn();
