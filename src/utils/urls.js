@@ -1,8 +1,8 @@
 export const bannerList = '/banner'
-export const categoryList = '/category-mens'
-export const discountList = '/discount-mens'
-export const setsList = '/sets-mens'
-export const menCollectionsList = '/mens'
-export const menProductsList = '/men-products'
-export const productsFilter = (id) => `/men-products?men_id=${id}`  
-export const productWithSlug = (slug) => `/men-products?slug=${slug}`
+export const categoryList = '/category'
+export const discountList = '/discount'
+export const setsList = '/sets'
+export const menCollectionsList = '/collections'
+export const menProductsList = '/products'
+export const productsFilter = (id) => `products?collection_id=${id}`  
+export const productWithSlug = (slug) => `/products?slug=${slug}`

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { BoxIcon, CarIcon, GiftIcon } from '../../assets/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { productGet } from '../../store/actions/productActions'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { addCart } from '../../store/slices/cart'
 function ProductPage() {
   const { product } = useSelector(state => state.product)
@@ -11,13 +11,11 @@ function ProductPage() {
 
   useEffect(() => {
     dispatch(productGet(id))
-  }, [])
+  }, [id])
 
   const handleAddCart = (product) => {
     dispatch(addCart(product))
   }
-
-
 
   return (
     <div className='product'>
@@ -42,11 +40,13 @@ function ProductPage() {
             </div>
             <div className="product-content__content">
               <div className="product-content__col">
-                <p className='product-content__title'>Color <span>black</span></p>
+                <p className='product-content__title'>Color <span>{product.color}</span></p>
                 <div className="product-content__color">
                   {
                     product.colors?.map((color, i) => (
-                      <button key={i} className={`product-content__color_button ${color.toLowerCase()}`}></button>
+                      <Link key={i} to={`/product/${product.slug?.split('-')?.slice(0, -1)?.join('-')}-${color.toLowerCase().slice('').split(' ').join('-')}`}>
+                        <button key={i} className={`product-content__color_button ${color.toLowerCase()}`}></button>
+                      </Link>
                     ))
                   }
                 </div>
@@ -91,7 +91,7 @@ function ProductPage() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
