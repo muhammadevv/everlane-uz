@@ -21,6 +21,7 @@
       color: $black;
       font-size: 32px;
       font-weight: 400;
+      margin-top: 10px;
     }
   }
 
@@ -69,6 +70,7 @@
       color: $black;
       font-size: 12px;
       font-weight: 400;
+      margin-top: 10px;
     }
 
     &__price {
@@ -98,6 +100,12 @@
       opacity: 0;
       visibility: hidden;
       @include trn();
+
+      &_span {
+        position: absolute;
+        top: 12px;
+        right: 16px;
+      }
     }
 
     &__buttons {

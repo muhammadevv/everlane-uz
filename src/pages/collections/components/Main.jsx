@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addCart } from "../../../store/slices/cart";
+import PlusIcon from "../../../assets/icons/PlusIcon";
 
 function Main({ products, title }) {
 
@@ -24,7 +25,7 @@ function Main({ products, title }) {
                 <Link to={`/product/${item.slug}`}>
                   <img src={item.list.image} alt={item.title} />
                 </Link>
-                <button onClick={() => handleAddCart(item)} className="main-product__cart">Quick add</button>
+                <button onClick={() => handleAddCart(item)} className="main-product__cart">Quick add <span className="main-product__cart_span"><PlusIcon /></span></button>
               </div>
               <div className="main-product__content">
                 <div className="main-product__text">
