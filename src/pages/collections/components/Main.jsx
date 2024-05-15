@@ -23,7 +23,7 @@ function Main({ products, title }) {
             <div className="main-product" key={item.id}>
               <div className="main-product__image">
                 <Link to={`/product/${item.slug}`}>
-                  <img src={item.list.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} />
                 </Link>
                 <button onClick={() => handleAddCart(item)} className="main-product__cart">Quick add <span className="main-product__cart_span"><PlusIcon /></span></button>
               </div>
@@ -33,7 +33,7 @@ function Main({ products, title }) {
                     <h3 className='main-product__title'>{item.title}</h3>
                     <p className='main-product__price'>${item.price}</p>
                   </div>
-                  <p className='main-product__subtitle'>{item.list.color}</p>
+                  <p className='main-product__subtitle'>{item.color}</p>
                 </div>
                 <div className="main-product__buttons">
                   {
