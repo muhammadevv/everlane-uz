@@ -46,13 +46,13 @@ function Modal({ modalOpen, setModalOpen }) {
                   items.map((item, i) => (
                     <div key={i} className="modal-product">
                       <div className="modal-product__image">
-                        <img src={item?.list?.image} alt={item.title} />
+                        <img src={item.image} alt={item.title} />
                       </div>
                       <div className="modal-product__content">
                         <div className="modal-product__row">
                           <div className="modal-product__text">
                             <h5 className="modal-product__title">{item.title}</h5>
-                            <p className="modal-product__subtitle">{`${item?.list?.size} | ${item?.list?.color}`}</p>
+                            <p className="modal-product__subtitle">{`${item.sizes} | ${item.color}`}</p>
                           </div>
                           <button onClick={() => handleDelete(item.id)} className="modal-product__button">
                             <DeleteIcon />
