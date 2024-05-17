@@ -8,10 +8,10 @@ function ProductPage() {
   const { product } = useSelector(state => state.product)
   const dispatch = useDispatch()
   const { id } = useParams()
-
   useEffect(() => {
     dispatch(productGet(id))
   }, [id])
+
 
   const handleAddCart = (product) => {
     dispatch(addCart(product))
@@ -25,7 +25,7 @@ function ProductPage() {
             {
               product.images?.map((img, i) => (
                 <div key={i} className="product-images__img">
-                  <img src={img} alt={product.title} />
+                  <img src={img} alt={product?.title} />
                 </div>
               ))
             }
