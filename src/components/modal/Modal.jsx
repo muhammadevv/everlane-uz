@@ -46,7 +46,7 @@ function Modal({ modalOpen, setModalOpen }) {
                   items.map((item, i) => (
                     <div key={i} className="modal-product">
                       <div className="modal-product__image">
-                        <img src={item?.list?.image} alt={item.title} />
+                        <img src={item.image} alt={item.title} />
                       </div>
                       <div className="modal-product__content">
                         <div className="modal-product__row">
