@@ -44,7 +44,7 @@ function ProductPage() {
                 <div className="product-content__color">
                   {
                     product.colors?.map((color, i) => (
-                      <Link key={i} to={`/product/${product.slug?.split('-')?.slice(0, -1)?.join('-')}-${color.toLowerCase().slice('').join('')}`}>
+                      <Link key={i} to={`/product/${product.slug?.split('-')?.slice(0, -1)?.join('-')}-${color.toLowerCase().slice(' ').split(' ').join('')}`}>
                         <button key={i} className={`product-content__color_button ${color.toLowerCase()}`}></button>
                       </Link>
                     ))
