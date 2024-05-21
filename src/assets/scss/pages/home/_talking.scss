@@ -3,7 +3,6 @@
   margin-bottom: 90px;
   padding: 0 4%;
 
-  &-parent {}
 
   &-item {
     max-width: 5520px;
@@ -13,20 +12,39 @@
     display: flex;
     padding: 0 4% 40px 4%;
 
+    @include media (440) {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+
     &__toptitle {
       color: $black;
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 40px;
       letter-spacing: 0.03em;
+
+      @include media (440) {
+        display: none;
+      }
+    }
+
+    &__rating {
+      margin-top: 16px;
     }
 
     &__title {
       color: $black;
       font-size: 22px;
-      line-height: 32px;
+      line-height: 140%;
       margin-top: 20px;
       margin-bottom: 40px;
+
+      @include media (440) {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
     }
 
     &__subtitle {
@@ -34,6 +52,10 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.03em;
+
+      @include media(440) {
+        font-size: 12px;
+      }
     }
 
     &__img {
@@ -52,6 +74,11 @@
     padding-left: 2%;
     @include flex(unset, center);
     flex-direction: column;
+
+    @include media(440) {
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &-image {
@@ -59,6 +86,10 @@
     max-height: 3332px;
     width: 50%;
     height: 100%;
+
+    @include media (440) {
+      width: 100%;
+    }
   }
 }
 

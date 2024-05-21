@@ -23,6 +23,12 @@
     padding: 0 3%;
     align-items: center;
     justify-content: space-between;
+
+    @include media (990) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
   }
 
   &-item {
@@ -55,6 +61,12 @@
       text-transform: uppercase;
       text-decoration: underline;
       margin-top: 8px;
+
+      @include media (1110) {
+        font-size: 12px;
+      }
+
+      @include media (960) {}
     }
   }
 }

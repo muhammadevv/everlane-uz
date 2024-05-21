@@ -11,7 +11,7 @@ function Talking() {
         style={{
           '--swiper-navigation-color': '#000',
           '--swiper-pagination-color': '#000',
-          '--swiper-navigation-size': '30px',
+          '--swiper-navigation-size': '20px',
         }}
         slidesPerView={1}
         spaceBetween={30}
@@ -27,7 +27,7 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -38,7 +38,7 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -49,7 +49,7 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -60,7 +60,7 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -71,7 +71,7 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
