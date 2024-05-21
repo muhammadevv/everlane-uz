@@ -31,3 +31,8 @@ export const getProductsList = createAsyncThunk('men-products', async () => {
   let response = await Axios.get(menProductsList)
   return response.data
 })
+
+export const postProductsList = createAsyncThunk('men-products', async () => {
+  let response = await Axios.post(menProductsList)
+  return response.data
+})

@@ -10,7 +10,7 @@
   &-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
     flex: 1 1 auto;
 
@@ -195,7 +195,7 @@
 
         &.scarab {
           background-color: #23312d;
-          
+
         }
 
         &.deep.moss.green {

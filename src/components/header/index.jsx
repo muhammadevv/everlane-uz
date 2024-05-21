@@ -1,4 +1,4 @@
-import { CartIcon, LogoIcon, SearchIcon, UserIcon } from '../../assets/icons'
+import { CartIcon, LogoIcon, MenuIcon, SearchIcon, UserIcon } from '../../assets/icons'
 import { Link, useLocation } from 'react-router-dom'
 import { category } from '../../utils/routes'
 import Categories from '../categories/Categories'
@@ -19,6 +19,10 @@ function Header({ setModalOpen }) {
                   <Link key={item.id} className={`header-link ${path === item.slug && 'active'}`} to={`${item.slug}`}>{item.title}</Link>
                 ))
               }
+
+              <button className='header-button__menu'>
+                <MenuIcon />
+              </button>
             </div>
             <div className="header-logo">
               <Link to='/'>
@@ -30,7 +34,7 @@ function Header({ setModalOpen }) {
               <button className='header-button'><UserIcon /></button>
               <button onClick={() => setModalOpen(true)} className='header-button'><CartIcon />
                 {
-                  items.length > 0 && <span className='header-button__span'>{items.length}</span> 
+                  items.length > 0 && <span className='header-button__span'>{items.length}</span>
                 }
               </button>
             </div>
