@@ -2,21 +2,24 @@
   margin-bottom: 90px;
 
   &-content {
-    // padding: 0 72px;
     @include flex(center, space-evenly);
+
+    @include media(440) {
+      flex-direction: column;
+      gap: 40px
+    }
   }
 
   &-item {
     @include center();
     flex-direction: column;
-    // justify-content: space-evenly;
 
     &__title {
       font-size: 16px;
       font-weight: 600;
       line-height: 21px;
       letter-spacing: .03em;
-      margin: 20px 0;
+      margin: 10px 0;
     }
 
     &__subtitle {

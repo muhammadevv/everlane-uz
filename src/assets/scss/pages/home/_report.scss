@@ -5,6 +5,12 @@
     @include flex (unset, center);
     gap: 2%;
     padding: 0 10%;
+
+    @include media(440) {
+      flex-direction: column;
+      padding: 4%;
+    }
+
   }
 
   &-item {
@@ -16,11 +22,14 @@
     &__title {
       color: $black;
       font-size: 24px;
-      line-height: 32px;
       margin-bottom: 20px;
       font-weight: 400;
       text-align: center;
       text-transform: capitalize;
+
+      @include media(440) {
+        font-size: 18px;
+      }
     }
 
     &__subtitle {
