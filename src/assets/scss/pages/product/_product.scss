@@ -61,6 +61,15 @@
       margin-bottom: 10px;
       line-height: 130%;
     }
+
+    &__price {
+      color: $black;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      line-height: 130%;
+      margin-left: 20px
+    }
   }
 
   &-content {
@@ -70,6 +79,11 @@
       font-size: 12px;
       font-weight: 600;
       margin-bottom: 10px;
+
+      &_color {
+        font-weight: 400;
+        color: $black;
+      }
     }
 
     &__color {
@@ -86,14 +100,106 @@
         &.black {
           background-color: black;
         }
+
         &.deep.blue {
           background-color: #2e5283;
         }
+
         &.beech {
           background-color: #5b4f3b;
         }
+
+        &.seagrass {
+          background-color: #959889;
+        }
+
+        &.navy {
+          background-color: #394868;
+        }
+
+        &.parchment {
+          background-color: #dfd1be;
+        }
+
+        &.spring.lake {
+          background-color: #667e91;
+        }
+
+        &.white {
+          background-color: #f4f9ff;
+        }
+
+        &.brown {
+          background-color: #906652;
+        }
+
         &.grey {
-          background-color: gray;
+          background-color: #cbc5c1;
+        }
+
+        &.orange {
+          background-color: #f68d2e;
+        }
+
+        &.green {
+          background-color: #62664d;
+        }
+
+        &.cornstalk.chambray {
+          background-color: #a9947a;
+        }
+
+        &.heather.oatmeal {
+          background-color: #ccc5b5;
+        }
+
+        &.kalamata {
+          background-color: #5f5c4c;
+        }
+
+        &.trench.coat.khaki {
+          background-color: rgb(170, 157, 137);
+        }
+
+        &.toasted.coconut {
+          background-color: #8b6a4f;
+        }
+
+        &.blue {
+          background-color: #34414e;
+        }
+
+        &.cornstalk {
+          background-color: #a9947a;
+        }
+
+        &.light.blue {
+          background-color: #cdd7e3;
+        }
+
+        &.slate.grey {
+          background-color: #49494d;
+        }
+
+        &.sage.green {
+          background-color: #888d82;
+        }
+
+        &.hid.heathered.grey {
+          background-color: #b1b3b3;
+        }
+
+        &.heathered.cashew {
+          background-color: #ceb899;
+        }
+
+        &.scarab {
+          background-color: #23312d;
+          
+        }
+
+        &.deep.moss.green {
+          background-color: #414832;
         }
       }
     }
@@ -153,6 +259,8 @@
       line-height: 150%;
       letter-spacing: 0.03em;
       color: $black;
+
+
     }
 
     &__subtitle {

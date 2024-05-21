@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { CloseIcon, DeleteIcon } from "../../assets/icons"
 import { decrement, increment, removeCart } from "../../store/slices/cart"
 import { Link } from "react-router-dom"
+import toast from "react-hot-toast"
 
 function Modal({ modalOpen, setModalOpen }) {
   const { items } = useSelector(state => state.cart)
@@ -11,6 +12,14 @@ function Modal({ modalOpen, setModalOpen }) {
 
   const handleDelete = (id) => {
     dispatch(removeCart(id))
+    toast('Item Deleted!', {
+      icon: <DeleteIcon />,
+      style: {
+        color: 'red',
+        backgroundColor: '#fff',
+        borderRadius: 10
+      }
+    })
   }
 
   const handleIncrement = (id) => {

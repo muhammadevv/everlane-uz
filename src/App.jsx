@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Header, Footer, Modal } from "./components"
 import { Route, Routes } from "react-router-dom"
 import { routes } from "./utils/routes"
+import { Toaster } from "react-hot-toast"
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -19,6 +20,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <Toaster position="top-center" />
       <Modal setModalOpen={setModalOpen} modalOpen={modalOpen} />
     </>
   )

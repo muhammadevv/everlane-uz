@@ -2,12 +2,22 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { addCart } from "../../../store/slices/cart";
 import PlusIcon from "../../../assets/icons/PlusIcon";
+import toast from "react-hot-toast";
+import {CheckIcon } from "../../../assets/icons";
 
 function Main({ products, title }) {
 
   const dispatch = useDispatch()
   const handleAddCart = (product) => {
     dispatch(addCart(product))
+    toast('Item Added!', {
+      icon: <CheckIcon/>,
+      style: {
+        color: '#fff',
+        backgroundColor: '#000',
+        borderRadius: 10
+      }
+    })
   }
 
   return (

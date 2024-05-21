@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
-import { BoxIcon, CarIcon, GiftIcon } from '../../assets/icons'
+import { BoxIcon, CarIcon, CheckIcon, DeleteIcon, GiftIcon } from '../../assets/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { productGet } from '../../store/actions/productActions'
 import { Link, useParams } from 'react-router-dom'
 import { addCart } from '../../store/slices/cart'
+import toast from 'react-hot-toast'
 function ProductPage() {
   const { product } = useSelector(state => state.product)
   const dispatch = useDispatch()
@@ -15,6 +16,14 @@ function ProductPage() {
 
   const handleAddCart = (product) => {
     dispatch(addCart(product))
+    toast('Item Added!', {
+      icon: <CheckIcon />,
+      style: {
+        color: '#fff',
+        backgroundColor: '#000',
+        borderRadius: 10
+      }
+    })
   }
 
   return (
@@ -34,13 +43,13 @@ function ProductPage() {
             <div className="product-content__head">
               <div className="product-content__row">
                 <h3 className='product-head__title'>{product.title}</h3>
-                <p className='product-head__title'>${product.price}</p>
+                <p className='product-head__price'>${product.price}</p>
               </div>
               <p><span>⭐⭐⭐⭐⭐</span>({product.review}) review </p>
             </div>
             <div className="product-content__content">
               <div className="product-content__col">
-                <p className='product-content__title'>Color <span>{product.color}</span></p>
+                <p className='product-content__title'>Color <span className='product-content__title_color'> {product.color}</span></p>
                 <div className="product-content__color">
                   {
                     product.colors?.map((color, i) => (

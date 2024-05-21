@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "The Seersucker Short-Sleeve Shirt",
-    "slug": "the-seersucker-short-sleeve-shirt-be ech",
+    "slug": "the-seersucker-short-sleeve-shirt-beech",
     "price": 78,
     "review": 56,
     "collection_id": 1,
@@ -63,6 +63,37 @@
   },
   {
     "id": 3,
+    "title": "The Essential Organic Garment-Dyed Crew",
+    "slug": "the-essential-organic-garment-dyed-crew-parchment",
+    "price": 40,
+    "review": 56,
+    "collection_id": 1,
+    "color": "Parchment",
+    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0cd75340_46f6/mens-essential-organic-dyed-crew-parchment",
+    "colors": [
+      "Black",
+      "Seagrass",
+      "Navy",
+      "Parchment",
+      "Spring Lake"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0cd75340_46f6/mens-essential-organic-dyed-crew-parchment",
+      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/401ed52f_ee08/mens-essential-organic-dyed-crew-parchment",
+      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/1b1cb7a1_4390/mens-essential-organic-dyed-crew-parchment",
+      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6e601bbe_421c/mens-essential-organic-dyed-crew-parchment"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 4,
     "title": "The Seersucker Short-Sleeve Shirt",
     "slug": "the-seersucker-short-sleeve-shirt-black",
     "price": 78,
@@ -79,8 +110,8 @@
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/41a8cc1c_70e5/mens-seersucker-ss-shirt-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/2afefe36_7da8/mens-seersucker-ss-shirt-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/02d74a3b_18e9/mens-seersucker-ss-shirt-black",
-      "https://media.everlane.com/images/c_fill,w_3840,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fcdb4264_87ac/mens-seersucker-ss-shirt-black",
-      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0f36c741_f5fe/mens-seersucker-ss-shirt-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fcdb4264_87ac/mens-seersucker-ss-shirt-black",
+      "https://media.everlane.com/images/c_fill,w_3840,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0f36c741_f5fe/mens-seersucker-ss-shirt-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/edc0c0c9_2b84/mens-seersucker-ss-shirt-black"
     ],
     "sizes": [
@@ -93,14 +124,14 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "The Seersucker Short",
     "slug": "the-seersucker-short-black",
     "price": 70,
     "review": 56,
     "collection_id": 1,
     "color": "Black",
-    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/265e43e7_acdb/mens-seersucker-short-black",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/c739d31a_f434/mens-seersucker-short-black",
     "colors": [
       "Deep Blue",
       "Beech",
@@ -110,7 +141,7 @@
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/265e43e7_acdb/mens-seersucker-short-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/c739d31a_f434/mens-seersucker-short-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9acbe1ed_f2ff/mens-seersucker-short-black",
-      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/181fb353_1817/mens-seersucker-short-black",
+      "https://media.everlane.com/images/c_fill,w_3840,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/181fb353_1817/mens-seersucker-short-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8a367d64_8200/mens-seersucker-short-black",
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/f019173e_57c2/mens-seersucker-short-black"
     ],
@@ -124,7 +155,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "The Essential Organic Garment-Dyed Henley",
     "slug": "the-essential-organic-garment-dyed-henley-black",
     "price": 50,
@@ -133,9 +164,10 @@
     "color": "Black",
     "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/61cd8354_dd0a/mens-essential-organic-dyed-henley-black",
     "colors": [
-      "Deep Blue",
-      "Beech",
-      "Black"
+      "Black",
+      "Seagrass",
+      "Navy",
+      "Parchment"
     ],
     "images": [
       "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/61cd8354_dd0a/mens-essential-organic-dyed-henley-black",
@@ -153,9 +185,9 @@
     ]
   },
   {
-    "id": 6,
-    "title": "The Essential Organic Garment-Dyed Henley",
-    "slug": "the-essential-organic-garment-dyed-henley-seagrass",
+    "id": 7,
+    "title": "The Essential Organic Garment-Dyed Polo",
+    "slug": "the-essential-organic-garment-dyed-polo-seagrass",
     "price": 60,
     "review": 56,
     "collection_id": 1,
@@ -186,48 +218,17 @@
     ]
   },
   {
-    "id": 7,
-    "title": "The Linen Short-Sleeve Popover Shirt",
-    "slug": "the-linen-short-sleeve-popover-shirt-bone-cornstalk",
-    "price": 78,
-    "review": 56,
-    "collection_id": 1,
-    "color": "Bone Cornstalk",
-    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/7aad7f96_6edc/mens-linen-ss-popover-shirt-bone-cornstalk",
-    "colors": [
-      "Black",
-      "Bone Cornstalk",
-      "White"
-    ],
-    "images": [
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/7aad7f96_6edc/mens-linen-ss-popover-shirt-bone-cornstalk",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/86556548_6e6f/mens-linen-ss-popover-shirt-bone-cornstalk",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/c6587fbf_cd82/mens-linen-ss-popover-shirt-bone-cornstalk",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6d6c798a_4989/mens-linen-ss-popover-shirt-bone-cornstalk",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/09b18732_c9ac/mens-linen-ss-popover-shirt-bone-cornstalk",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/bd4f69e1_0f32/mens-linen-ss-popover-shirt-bone-cornstalk"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
-  },
-  {
     "id": 8,
     "title": "The 7\" Linen Trouser Short",
-    "slug": "the-7-linen-trouser-short",
+    "slug": "the-7-linen-trouser-short-cornstalkchambray",
     "price": 75,
     "review": 56,
     "collection_id": 1,
     "color": "Cornstalk Chambray",
-    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/df48c11f_b1d0/mens-linen-trouser-short-cornstalkchambray",
+    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/53bacc11_ec9c/mens-linen-trouser-short-cornstalkchambray",
     "colors": [
       "Black",
-      "Bone Cornstalk",
+      "Cornstalk Chambray",
       "Navy"
     ],
     "images": [
@@ -258,7 +259,6 @@
     "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/76fc1e41_7f7f/mens-linen-trouser-black",
     "colors": [
       "Black",
-      "Bone Cornstalk",
       "Navy"
     ],
     "images": [
@@ -313,7 +313,7 @@
   {
     "id": 11,
     "title": "The Premium Weight Short-Sleeve Polo",
-    "slug": "the-premium-weight-short-sleeve-polo-heather-oatmeal",
+    "slug": "the-premium-weight-short-sleeve-polo-heatheroatmeal",
     "price": 75,
     "review": 21,
     "collection_id": 1,
@@ -392,10 +392,7 @@
       "Slate Grey",
       "Grey",
       "Sage Green",
-      "Cornstalk",
-      "White Blue",
-      "Bone Navy",
-      "Charcoal White"
+      "Cornstalk"
     ],
     "images": [
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/bbda9643_8661/mens-organic-oxford-shirt-cornstalk",
@@ -425,7 +422,6 @@
     "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/cfce9fb9_c0cd/mens-linen-ss-popover-shirt-white",
     "colors": [
       "Black",
-      "Bone Cornstalk",
       "White"
     ],
     "images": [
@@ -447,25 +443,25 @@
   },
   {
     "id": 15,
-    "title": "The Linen Trouser",
-    "slug": "the-linen-trouser-cornstalk-chambray",
-    "price": 118,
+    "title": "The Linen Blazer",
+    "slug": "the-linen-blazer-cornstalkchambray",
+    "price": 198,
     "review": 21,
     "collection_id": 1,
     "color": "Cornstalk Chambray",
-    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/3611c6b4_64e6/mens-linen-trouser-cornstalkchambray",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fb4a30bc_d78b/mens-linen-blazer-cornstalkchambray",
     "colors": [
       "Black",
       "Bone Cornstalk",
       "Navy"
     ],
     "images": [
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/80fede09_c425/mens-linen-trouser-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/3611c6b4_64e6/mens-linen-trouser-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/50a4c91d_f94b/mens-linen-trouser-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/41b78786_1608/mens-linen-trouser-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c6e2992_1070/mens-linen-trouser-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/b22c5b45_6ce3/mens-linen-trouser-cornstalkchambray"
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fe4ae508_a138/mens-linen-blazer-cornstalkchambray",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fb4a30bc_d78b/mens-linen-blazer-cornstalkchambray",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d76781d4_bbc2/mens-linen-blazer-cornstalkchambray",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/a9986b76_6deb/mens-linen-blazer-cornstalkchambray",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/b4e59a79_7d4a/mens-linen-blazer-cornstalkchambray",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5c9bb638_7f83/mens-linen-blazer-cornstalkchambray"
     ],
     "sizes": [
       "XS",
@@ -478,39 +474,8 @@
   },
   {
     "id": 16,
-    "title": "The Linen Blazer",
-    "slug": "the-linen-blazer-cornstalk-chambray",
-    "price": 198,
-    "review": 21,
-    "collection_id": 1,
-    "color": "Cornstalk Chambray",
-    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fb4a30bc_d78b/mens-linen-blazer-cornstalkchambray",
-    "colors": [
-      "Black",
-      "Cornstalk Chambray",
-      "Navy"
-    ],
-    "images": [
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fe4ae508_a138/mens-linen-blazer-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fb4a30bc_d78b/mens-linen-blazer-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d76781d4_bbc2/mens-linen-blazer-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/a9986b76_6deb/mens-linen-blazer-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/b4e59a79_7d4a/mens-linen-blazer-cornstalkchambray",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5c9bb638_7f83/mens-linen-blazer-cornstalkchambray"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
-  },
-  {
-    "id": 17,
     "title": "The Seersucker Short-Sleeve Shirt",
-    "slug": "the-seersucker-short-sleeve-shirt-deep-blue",
+    "slug": "the-seersucker-short-sleeve-shirt-deepblue",
     "price": 78,
     "review": 21,
     "collection_id": 1,
@@ -539,9 +504,9 @@
     ]
   },
   {
-    "id": 18,
+    "id": 17,
     "title": "The Essential Organic Garment-Dyed Crew",
-    "slug": "the-essential-organic-garment-dyed-crew-spring-lake",
+    "slug": "the-essential-organic-garment-dyed-crew-springlake",
     "price": 40,
     "review": 21,
     "collection_id": 1,
@@ -570,9 +535,9 @@
     ]
   },
   {
-    "id": 19,
+    "id": 18,
     "title": "The Seersucker Short",
-    "slug": "the-seersucker-short-deep-blue",
+    "slug": "the-seersucker-short-deepblue",
     "price": 70,
     "review": 21,
     "collection_id": 1,
@@ -601,7 +566,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 19,
     "title": "The Linen Blazer",
     "slug": "the-linen-blazer-navy",
     "price": 198,
@@ -632,9 +597,9 @@
     ]
   },
   {
-    "id": 21,
+    "id": 20,
     "title": "The Cotton Slub Henley",
-    "slug": "the-cotton-slub-henley-heather-oatmeal",
+    "slug": "the-cotton-slub-henley-heatheroatmeal",
     "price": 58,
     "review": 21,
     "collection_id": 1,
@@ -664,7 +629,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 21,
     "title": "The 7\" Linen Trouser Short",
     "slug": "the-7-linen-trouser-short-navy",
     "price": 75,
@@ -695,9 +660,9 @@
     ]
   },
   {
-    "id": 23,
+    "id": 22,
     "title": "The Premium Weight Short-Sleeve Polo",
-    "slug": "the-premium-weight-short-sleeve-polo-deep-navy",
+    "slug": "the-premium-weight-short-sleeve-polo-deepnavy",
     "price": 75,
     "review": 21,
     "collection_id": 1,
@@ -727,7 +692,7 @@
     ]
   },
   {
-    "id": 24,
+    "id": 23,
     "title": "The Organic Cotton Chore Jacket",
     "slug": "the-organic-cotton-chore-jacket-navy",
     "price": 148,
@@ -747,6 +712,40 @@
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/38b7ecab_8ec7/mens-organic-cotton-chore-jacket-navy",
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9aa133aa_7b43/mens-organic-cotton-chore-jacket-navy",
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/77802b0b_8bb1/mens-organic-cotton-chore-jacket-navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "The Linen Standard Fit Shirt",
+    "slug": "the-linen-standard-fit-shirt-navy",
+    "price": 88,
+    "review": 172,
+    "collection_id": 1,
+    "color": "Navy",
+    "image": "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8b04c298_5af6/mens-linen-ls-shirt-navy",
+    "colors": [
+      "Black",
+      "White",
+      "Trench Coat Khaki",
+      "Navy",
+      "Kalamata",
+      "Sage Green"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8b04c298_5af6/mens-linen-ls-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fc3b9c96_3d50/mens-linen-ls-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d6b7b050_624d/mens-linen-ls-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/a563be7e_bd6f/mens-linen-ls-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/a563be7e_bd6f/mens-linen-ls-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_1920,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/fbc78ae4_09eb/mens-linen-ls-shirt-navy"
     ],
     "sizes": [
       "XS",
@@ -759,37 +758,6 @@
   },
   {
     "id": 25,
-    "title": "The Organic Cotton Chore Jacket",
-    "slug": "the-organic-cotton-chore-jacket-navy",
-    "price": 148,
-    "review": 4,
-    "collection_id": 1,
-    "color": "Navy",
-    "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/356b8d1a_afac/mens-organic-cotton-chore-jacket-navy",
-    "colors": [
-      "Black",
-      "Kalamata",
-      "Navy"
-    ],
-    "images": [
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/356b8d1a_afac/mens-organic-cotton-chore-jacket-navy",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0a77e229_c8b9/mens-organic-cotton-chore-jacket-navy",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/2ff62aa9_4e51/mens-organic-cotton-chore-jacket-navy",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/38b7ecab_8ec7/mens-organic-cotton-chore-jacket-navy",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9aa133aa_7b43/mens-organic-cotton-chore-jacket-navy",
-      "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/77802b0b_8bb1/mens-organic-cotton-chore-jacket-navy"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ]
-  },
-  {
-    "id": 26,
     "title": "The Linen Trouser",
     "slug": "the-linen-trouser-navy",
     "price": 118,
@@ -799,7 +767,6 @@
     "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/f941a05a_f597/mens-linen-trouser-navy",
     "colors": [
       "Black",
-      "Cornstalk Chambray",
       "Navy"
     ],
     "images": [
@@ -820,24 +787,221 @@
     ]
   },
   {
-    "id": 27,
+    "id": 26,
     "title": "The Premium-Weight Crew | Uniform",
-    "slug": "the-premium-weight-crew-uniform-",
-    "price": 118,
-    "review": 1,
+    "slug": "the-premium-weight-crew-uniform-navyblue",
+    "price": 50,
+    "review": 721,
     "collection_id": 1,
     "color": " Navy Bone",
     "image": "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5e89f33c_f0fb/mens-premium-weight-crew-navy-bone",
     "colors": [
       "Black",
       "White",
-      "Navy"
+      "Deep Navy",
+      "Mid Heathered Grey",
+      "Heather Oatmeal",
+      "Heathered Cashew",
+      "Scarab",
+      "Deep Moss Green",
+      "Spring Lake"
     ],
     "images": [
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5e89f33c_f0fb/mens-premium-weight-crew-navy-bone",
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/e52b3b5c_b594/mens-premium-weight-crew-navy-bone",
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8a726910_f2a3/mens-premium-weight-crew-navy-bone",
       "https://media.everlane.com/images/c_fill,w_1080,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/0ecd4209_cf61/mens-premium-weight-crew-navy-bone"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "The Relaxed Taper Air Chino",
+    "slug": "the-relaxed-taper-air-chino-deepnavy",
+    "price": 110,
+    "review": 1,
+    "collection_id": 1,
+    "color": "Deep Navy",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/37a9f413_577f/mens-relaxed-taper-air-chino-deep-navy",
+    "colors": [
+      "Black",
+      "Kalamata",
+      "Deep Navy",
+      "Toasted Coconut",
+      "Trench Coat Khaki"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9c4be7a2_7211/mens-relaxed-taper-air-chino-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/37a9f413_577f/mens-relaxed-taper-air-chino-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8b840efa_10c0/mens-relaxed-taper-air-chino-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/22635b8c_102b/mens-relaxed-taper-air-chino-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/8b4a811d_bdbb/mens-relaxed-taper-air-chino-deep-navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "The Premium Weight Long-Sleeve Polo",
+    "slug": "the-premium-weight-long-sleeve-polo-deepnavy",
+    "price": 90,
+    "review": 1,
+    "collection_id": 1,
+    "color": "Deep Navy",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/348d432e_81eb/mens-premium-weight-ls-polo-deep-navy",
+    "colors": [
+      "Black",
+      "Deep Navy",
+      "Heather Oatmeal"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/348d432e_81eb/mens-premium-weight-ls-polo-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/3072900d_ba9e/mens-premium-weight-ls-polo-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5b6c69c1_0baf/mens-premium-weight-ls-polo-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/c18f265b_81e4/mens-premium-weight-ls-polo-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_3840,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/718e8e40_b4f5/mens-premium-weight-ls-polo-deep-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/3a77b01f_4055/mens-premium-weight-ls-polo-deep-navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "The Relaxed Linen Short-Sleeve Shirt",
+    "slug": "the-relaxed-linen-short-sleeve-shirt-navy",
+    "price": 78,
+    "review": 10,
+    "collection_id": 1,
+    "color": "Navy",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d842b583_86aa/mens-linen-ss-camp-shirt-navy",
+    "colors": [
+      "Black",
+      "Kalamata",
+      "White",
+      "Light Blue",
+      "Trench Coat Khaki",
+      "Navy"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d842b583_86aa/mens-linen-ss-camp-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/895f0d5b_1049/mens-linen-ss-camp-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/d7ec6681_5612/mens-linen-ss-camp-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/17e02683_3176/mens-linen-ss-camp-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/17e02683_3176/mens-linen-ss-camp-shirt-navy",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9069b58a_b858/mens-linen-ss-camp-shirt-navy"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "The Essential Organic Garment-Dyed Crew",
+    "slug": "the-essential-organic-garment-dyed-crew-black",
+    "price": 40,
+    "review": 10,
+    "collection_id": 1,
+    "color": "Black",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/f26859e8_6502/mens-essential-organic-dyed-crew-black",
+    "colors": [
+      "Black",
+      "Seagrass",
+      "Navy",
+      "Parchment",
+      "Spring Lake"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/f26859e8_6502/mens-essential-organic-dyed-crew-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5a105220_1b42/mens-essential-organic-dyed-crew-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/03e2a26d_3123/mens-essential-organic-dyed-crew-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/c086085b_9ec5/mens-essential-organic-dyed-crew-black"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "The Essential Organic Garment-Dyed Henley",
+    "slug": "the-essential-organic-garment-dyed-henley-seagrass",
+    "price": 50,
+    "review": 10,
+    "collection_id": 1,
+    "color": "Seagrass",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c68eaf5_dfa3/mens-essential-organic-dyed-henley-seagrass",
+    "colors": [
+      "Black",
+      "Seagrass",
+      "Navy",
+      "Parchment"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c68eaf5_dfa3/mens-essential-organic-dyed-henley-seagrass",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c68eaf5_dfa3/mens-essential-organic-dyed-henley-seagrass",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c68eaf5_dfa3/mens-essential-organic-dyed-henley-seagrass",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/6c68eaf5_dfa3/mens-essential-organic-dyed-henley-seagrass"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "The Essential Organic Garment-Dyed Polo",
+    "slug": "the-essential-organic-garment-dyed-polo-black",
+    "price": 60,
+    "review": 10,
+    "collection_id": 1,
+    "color": "Black",
+    "image": "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/2443084f_96fb/mens-essential-organic-dyed-polo-black",
+    "colors": [
+      "Black",
+      "Seagrass",
+      "Navy",
+      "Parchment",
+      "Spring Lake"
+    ],
+    "images": [
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/2443084f_96fb/mens-essential-organic-dyed-polo-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/9555958a_684b/mens-essential-organic-dyed-polo-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/71a6bd9f_59e4/mens-essential-organic-dyed-polo-black",
+      "https://media.everlane.com/images/c_fill,w_3840,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/949adf60_6619/mens-essential-organic-dyed-polo-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/f428f714_d210/mens-essential-organic-dyed-polo-black",
+      "https://media.everlane.com/images/c_fill,w_750,ar_4:5,q_auto,dpr_1.0,f_auto,fl_progressive:steep/i/5d032b1c_3c88/mens-essential-organic-dyed-polo-black"
     ],
     "sizes": [
       "XS",

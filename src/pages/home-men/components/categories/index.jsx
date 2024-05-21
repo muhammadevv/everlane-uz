@@ -21,7 +21,7 @@ function Category() {
         {category.loading ?
           list.map((item, i) => (<div className="categories-item" key={i}>
             <div className="categories-item__image">
-              <Skeleton height={200} />
+              <Skeleton />
             </div>
             <p className="categories-item__text">
               <Skeleton height={10} />
