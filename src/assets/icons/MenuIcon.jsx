@@ -1,18 +1,13 @@
 import * as React from "react"
 const MenuIcon = (props) => (
   <svg
-    width={40}
-    height={40}
-    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    width={18}
+    height={18}
+    viewBox="0 0 24 24"
     {...props}
   >
-    <path
-      stroke="#161912"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M14 20.5h12M14 16.5h12M14 24.5h12"
-    />
+    <path d="M3 5a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3zm0 6a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3zm0 6a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z" />
   </svg>
 )
 export default MenuIcon
