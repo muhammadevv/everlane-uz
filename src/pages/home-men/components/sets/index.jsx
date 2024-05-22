@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { useDispatch, useSelector } from "react-redux";
 import { getSetsList } from "../../../../store/actions/homeActions";
+import { Link } from "react-router-dom";
 function Sets() {
   const width = window.screen.width;
   const { sets } = useSelector((state) => state.home);
@@ -41,20 +42,22 @@ function Sets() {
         {
           sets.list.map((item, i) => (
             <SwiperSlide className="sets-item" key={i}>
-              <div className="sets-item__image">
-                <img
-                  className="sets-item__image__img"
-                  src={item.image}
-                  alt={item.title}
-                />
-              </div>
-              <div className="sets-item__content">
-                <div className="sets-item__row">
-                  <h3 className="sets-item__title">{item.title}</h3>
-                  <p className="sets-item__price">${item.price}</p>
+              <Link to={`/product/${item.slug}`}>
+                <div className="sets-item__image">
+                  <img
+                    className="sets-item__image__img"
+                    src={item.image}
+                    alt={item.title}
+                  />
                 </div>
-                <p className="sets-item__subtitle">{item.color}</p>
-              </div>
+                <div className="sets-item__content">
+                  <div className="sets-item__row">
+                    <h3 className="sets-item__title">{item.title}</h3>
+                    <p className="sets-item__price">${item.price}</p>
+                  </div>
+                  <p className="sets-item__subtitle">{item.color}</p>
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
       </Swiper>

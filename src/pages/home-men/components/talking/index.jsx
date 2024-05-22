@@ -3,6 +3,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+import { StarIcon } from '../../../../assets/icons';
 
 function Talking() {
   return (
@@ -27,7 +28,13 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -38,7 +45,13 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -49,7 +62,13 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -60,7 +79,13 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>
@@ -71,7 +96,13 @@ function Talking() {
         <SwiperSlide className='talking-item'>
           <div className="talking-content">
             <p className='talking-item__toptitle'>People are talking</p>
-            <p className='talking-item__rating'>⭐⭐⭐⭐⭐</p>
+            <p className='talking-item__rating'>
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </p>
             <p className='talking-item__title'>"Everlane's quality is one element that keeps me returning to them. This shirt look great and is well-constructed. I have received compliments on it."</p>
             <p className='talking-item__subtitle'>-Leo S, The Premium-Weight Crew</p>
           </div>

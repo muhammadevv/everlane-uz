@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BoxIcon, CarIcon, CheckIcon, DeleteIcon, GiftIcon } from '../../assets/icons'
+import { BoxIcon, CarIcon, CheckIcon, DeleteIcon, GiftIcon, StarGreyIcon, StarIcon } from '../../assets/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { productGet } from '../../store/actions/productActions'
 import { Link, useParams } from 'react-router-dom'
@@ -45,7 +45,15 @@ function ProductPage() {
                 <h3 className='product-head__title'>{product.title}</h3>
                 <p className='product-head__price'>${product.price}</p>
               </div>
-              <p><span>⭐⭐⭐⭐⭐</span>({product.review}) review </p>
+              <p className='product-head__review'>
+                <span className='product-head__rating'>
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarIcon />
+                  <StarGreyIcon />
+                </span>
+                ({product.review}) review </p>
             </div>
             <div className="product-content__content">
               <div className="product-content__col">

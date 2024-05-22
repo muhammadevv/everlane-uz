@@ -1,6 +1,17 @@
 .categories {
   margin-bottom: 90px;
 
+  @include media (900) {
+    margin-bottom: 60px;
+  }
+
+  @include media (768) {
+    margin-bottom: 40px;
+  }
+
+  @include media (440) {
+    margin-bottom: 30px;
+  }
 
   &-title__title {
     color: $black;
@@ -10,8 +21,18 @@
     text-align: center;
     margin-bottom: 26px;
 
-    @include media (440) {
+    @include media (900) {
+      font-size: 24px;
+    }
+
+    @include media (600) {
       font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    @include media (440) {
+      font-size: 20px;
+      margin-bottom: 16px;
     }
   }
 

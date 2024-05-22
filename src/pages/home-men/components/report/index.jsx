@@ -17,7 +17,7 @@ function Report() {
           <div className="report-item__image">
             <img className='report-item__image__img' src="/men/clean/report-2.avif" alt="" />
           </div>
-          <p className="report-item__subtitle">coordinating outfits for you and your loved ines.</p>
+          <p className="report-item__subtitle">Coordinating outfits for you and your loved ines.</p>
           <p className='report-item__button'>Read More</p>
         </div>
       </div>

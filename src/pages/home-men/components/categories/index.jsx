@@ -11,38 +11,28 @@ function Category() {
     dispatch(getCategoryList());
   }, []);
 
-  const list = [1, 2, 3, 4, 5, 6,]
   return (
     <section className="categories">
       <div className="categories-title">
         <h1 className="categories-title__title">Shop by Category</h1>
       </div>
       <div className="categories-content">
-        {category.loading ?
-          list.map((item, i) => (<div className="categories-item" key={i}>
+        {category.list.map((item, i) => (
+          <div className="categories-item">
             <div className="categories-item__image">
-              <Skeleton />
+              <img
+                className="categories-item__image__img"
+                src={item.image}
+                alt={item.title}
+              />
             </div>
             <p className="categories-item__text">
-              <Skeleton height={10} />
+              <Link to={`/collections/${item.slug}-${item.id}`}>
+                {item.title}
+              </Link>
             </p>
-          </div>))
-          : category.list.map((item, i) => (
-            <div className="categories-item" key={i}>
-              <div className="categories-item__image">
-                <img
-                  className="categories-item__image__img"
-                  src={item.image}
-                  alt={item.title}
-                />
-              </div>
-              <p className="categories-item__text">
-                <Link to={`/collections/${item.slug}-${item.id}`}>
-                  {item.title}
-                </Link>
-              </p>
-            </div>
-          ))}
+          </div>
+        ))}
       </div>
     </section>
   );

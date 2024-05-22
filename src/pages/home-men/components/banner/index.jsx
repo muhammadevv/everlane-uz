@@ -1,34 +1,18 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getBannerList } from '../../../../store/actions/homeActions'
-import Skeleton from 'react-loading-skeleton'
+import { Link } from 'react-router-dom'
 
 function Banner() {
-  const { banner } = useSelector(state => state.home)
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    dispatch(getBannerList())
-  }, [])
-
   return (
     <section className='banner'>
-      {
-        banner.loading ? <Skeleton height={1000} /> :
-          banner.list.filter(item => item.id === 1).map(item => (
-            <div key={item.id}>
-              <div className="banner-bg" >
-                <img className='banner-bg__image' src={item.image} alt="" />
-              </div>
-              <div className="banner-content">
-                <h1 className='banner-title'>{item.title}</h1>
-                <p className='banner-subtitle'>{item.subtitle}</p>
-                <button className='banner-button'>Shop now</button>
-              </div>
-            </div>
-          ))
-      }
-
+      <div className="banner-bg" >
+        <img className='banner-bg__image' src='/men/banner/banner-bg.avif' alt="" />
+      </div>
+      <div className="banner-content">
+        <h1 className='banner-title'>Summer Ready</h1>
+        <p className='banner-subtitle'>Top styles of season have just droppend</p>
+        <Link to={'/collections/mens-new-arrivals-1'}>
+          <button className='banner-button'>Shop now</button>
+        </Link>
+      </div>
     </section>
   )
 }

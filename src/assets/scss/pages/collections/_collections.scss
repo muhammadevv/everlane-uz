@@ -5,6 +5,10 @@
     display: flex;
     margin-top: 32px;
     gap: 20px;
+
+    @include media(900) {
+      flex-direction: column;
+    }
   }
 
   &-aside {
@@ -13,5 +17,9 @@
 
   &-main {
     width: calc(100% - 200px);
+
+    @include media(900) {
+      width: 100%;
+    }
   }
 }

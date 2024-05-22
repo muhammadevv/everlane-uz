@@ -3,7 +3,18 @@
   margin-bottom: 90px;
   padding: 0 4%;
 
+  @include media (900) {
+    margin-bottom: 60px;
+  }
 
+  @include media (768) {
+    margin-bottom: 40px;
+  }
+
+  @include media (440) {
+    margin-bottom: 30px;
+  }
+  
   &-item {
     max-width: 5520px;
     max-height: 3300px;
@@ -12,7 +23,7 @@
     display: flex;
     padding: 0 4% 40px 4%;
 
-    @include media (440) {
+    @include media (768) {
       flex-direction: column-reverse;
       padding: 0;
     }
@@ -24,13 +35,26 @@
       margin-bottom: 40px;
       letter-spacing: 0.03em;
 
-      @include media (440) {
+
+      @include media (1024) {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      @include media (800) {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      @include media (768) {
         display: none;
       }
     }
 
     &__rating {
-      margin-top: 16px;
+      margin-top: 10px;
+      @include flex(center);
+      gap: 4px;
     }
 
     &__title {
@@ -40,10 +64,34 @@
       margin-top: 20px;
       margin-bottom: 40px;
 
-      @include media (440) {
-        margin-top: 10px;
+      @include media (1024) {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      @include media (900) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      @include media (800) {
         font-size: 14px;
         margin-bottom: 20px;
+      }
+
+      @include media (768) {
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-right: 10%;
+      }
+
+      @include media(580) {
+        font-size: 16px;
+      }
+
+      @include media(580) {
+        font-size: 14px;
       }
     }
 
@@ -53,7 +101,21 @@
       line-height: 24px;
       letter-spacing: 0.03em;
 
-      @include media(440) {
+      @include media (1024) {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      @include media (800) {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+
+      @include media(768) {
+        font-size: 14px;
+      }
+
+      @include media(580) {
         font-size: 12px;
       }
     }
@@ -75,7 +137,7 @@
     @include flex(unset, center);
     flex-direction: column;
 
-    @include media(440) {
+    @include media(768) {
       width: 100%;
       padding: 0;
     }
@@ -87,7 +149,7 @@
     width: 50%;
     height: 100%;
 
-    @include media (440) {
+    @include media (768) {
       width: 100%;
     }
   }

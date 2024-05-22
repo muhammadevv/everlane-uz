@@ -2,11 +2,16 @@
   margin-top: 40px;
   padding: 60px 20px 20px 20px;
   background-color: $gray-100;
-
+  position: relative;
+  top: 120px;
 
   &-content {
     @include flex(unset, space-between);
     padding: 0 5%;
+
+    @include media (440) {
+      flex-wrap: wrap;
+    }
   }
 
   &-item {
