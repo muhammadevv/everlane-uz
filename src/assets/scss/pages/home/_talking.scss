@@ -14,7 +14,7 @@
   @include media (440) {
     margin-bottom: 30px;
   }
-  
+
   &-item {
     max-width: 5520px;
     max-height: 3300px;
@@ -83,7 +83,7 @@
         margin-top: 10px;
         font-size: 18px;
         margin-bottom: 20px;
-        padding-right: 10%;
+        padding-right: 4%;
       }
 
       @include media(580) {
