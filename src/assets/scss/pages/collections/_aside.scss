@@ -1,9 +1,14 @@
 .collections {
   &-aside {
 
+
     @include media(900) {
       width: 100%;
       position: sticky;
+      top: 0px;
+      z-index: 50;
+      padding: 20px 0;
+      background-color: #fff;
       @include flex(baseline, space-between);
       flex-direction: row-reverse;
     }
@@ -13,9 +18,8 @@
 
 .aside {
 
-  position: sticky;
-
   &-head {
+
 
     &__title {
       font-size: 12px;

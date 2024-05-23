@@ -28,15 +28,6 @@ body {
 .main {
   flex: 1 1 auto;
   position: relative;
-  top: 110px;
-
-  @include media(900) {
-    top: 58.5px;
-  }
-
-  @include media(660) {
-    top: 50px;
-  }
 }
 
 .wrapper:has(.modal.active) {

@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react'
-import { BoxIcon, CarIcon, CheckIcon, DeleteIcon, GiftIcon, StarGreyIcon, StarIcon } from '../../assets/icons'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar } from 'swiper/modules';
+import { BoxIcon, CarIcon, CheckIcon, GiftIcon, StarGreyIcon, StarIcon } from '../../assets/icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { productGet } from '../../store/actions/productActions'
 import { Link, useParams } from 'react-router-dom'
 import { addCart } from '../../store/slices/cart'
 import toast from 'react-hot-toast'
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
 function ProductPage() {
   const { product } = useSelector(state => state.product)
   const dispatch = useDispatch()
@@ -30,6 +35,22 @@ function ProductPage() {
     <div className='product'>
       <div className="container">
         <div className="product-wrapper">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={20}
+            scrollbar={{ color: '#000', backgroundColor: '#fff', borderRadius: 0 }}
+            style={{ scrollbarColor: 'black', msScrollbarTrackColor: "GrayText", scrollMargin: 20 }}
+            modules={[Scrollbar]}
+            className="product-images__mobile">
+            {
+              product.images?.map((img, i) => (
+                <SwiperSlide key={i} className="product-images__img_mobile">
+                  <img src={img} alt={product?.title} />
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
+
           <div className="product-images">
             {
               product.images?.map((img, i) => (

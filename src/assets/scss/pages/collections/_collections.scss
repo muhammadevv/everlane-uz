@@ -8,6 +8,8 @@
 
     @include media(900) {
       flex-direction: column;
+      margin: 0;
+      gap: 10px;
     }
   }
 
