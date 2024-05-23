@@ -43,7 +43,7 @@ function Sets() {
           "--swiper-navigation-size": "20px",
         }}
         spaceBetween={30}
-        slidesPerGroup={width >= 768 ? 2 : 1}
+        slidesPerGroup={width >= 768 ? 1 : 2}
         slidesPerView={width >= 768 ? 4 : width >= 440 ? 1 : 2}
         loop={true}
         pagination={{
