@@ -8,7 +8,7 @@ const FilterIcon = (props) => (
     className="filter_svg__feather filter_svg__feather-filter everlane-icon styles_filter-toggle__filter-icon__ILXRd"
     data-acsb-force-hidden="true"
     data-acsb-hidden="true"
-    viewBox="0 0 23 19"
+    viewBox="0 0 24 13"
     {...props}
   >
     <path stroke="currentColor" d="M.625 3.829h21.75M.625 14.738h21.75" />

@@ -13,6 +13,10 @@
 
   &-aside {
     width: 200px;
+
+    @include media(990) {
+      width: 160px;
+    }
   }
 
   &-main {

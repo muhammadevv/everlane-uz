@@ -37,10 +37,20 @@
       font-size: 13px;
       text-transform: uppercase;
       padding: 8px 18px;
-      @include center();
-      gap: 10px;
       border: 1px solid $black;
       background-color: $gray-100;
+      display: none;
+
+      @include media(900) {
+        display: block;
+        @include center();
+        gap: 8px;
+      }
+
+      @include media(440) {
+        font-size: 12px;
+        padding: 6px 16px;
+      }
     }
   }
 

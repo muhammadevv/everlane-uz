@@ -9,7 +9,7 @@ function Aside({ collections, products }) {
         <p className='aside-head__title'>{products.list.length} Products</p>
       </div>
       <div className="aside-content">
-        <button className='aside-content__button'>Filters<FilterIcon /></button>
+        <button className='aside-content__button'>Filters <span><FilterIcon /></span></button>
         <div className='aside-content__category'>
           <h4 className='aside-category__title'>Category</h4>
           <ul className='aside-category__content'>
