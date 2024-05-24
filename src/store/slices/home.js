@@ -19,7 +19,7 @@ const initialState = {
     list: [],
     loading: false
   },
-  menCollections: {
+  collections: {
     list: [],
     loading: false
   }
@@ -34,7 +34,7 @@ const homeSlice = createSlice({
     buildBuilder(builder, getCategoryList, 'category')
     buildBuilder(builder, getDiscountList, 'discount')
     buildBuilder(builder, getSetsList, 'sets')
-    buildBuilder(builder, getMenCollectionsList, 'menCollections')
+    buildBuilder(builder, getMenCollectionsList, 'collections')
   }
 })
 

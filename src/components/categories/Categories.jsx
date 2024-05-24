@@ -5,7 +5,7 @@ import { getMenCollectionsList } from '../../store/actions/homeActions'
 import Skeleton from 'react-loading-skeleton'
 
 function Categories() {
-  const { menCollections } = useSelector(state => state.home)
+  const { collections } = useSelector(state => state.home)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getMenCollectionsList())
@@ -21,7 +21,7 @@ function Categories() {
           //   <div className='header-category__item' style={{ display: 'flex', margin: 18 }} key={item} >
           //     <Skeleton style={{ width: 64 }} />
           //   </div>)) : 
-          menCollections.list.map(item => (
+          collections.list.map(item => (
             <div className='header-category__item' key={item.id}>
               <Link to={`/collections/${item.slug}-${item.id}`} className='header-category__item__link'>{item.title}</Link>
             </div>

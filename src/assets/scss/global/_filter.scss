@@ -34,6 +34,38 @@
     transition: all 0.3s ease-in-out;
   }
 
+  &-item {
+    border-bottom: 1px solid $gray-200;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  &-category {
+    margin-top: 14px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    &__link {
+      font-size: 12px;
+      flex: 1 1 auto;
+      padding: 6px 18px;
+      border-radius: 24px;
+      background-color: $gray-100;
+    }
+  }
+
+  &-close__btn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 14px;
+  }
 
   &__text {
     display: flex;

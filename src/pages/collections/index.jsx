@@ -8,7 +8,6 @@ import { FilterModal } from '../../components';
 
 function Collections() {
   const [filterOpen, setFilterOpen] = useState(false)
-
   const { products, collections } = useSelector(state => state.products)
   const params = useParams()
   const menId = +params.id.split('-').at(-1)
@@ -32,7 +31,7 @@ function Collections() {
           </div>
         </div>
       </div>
-    <FilterModal setFilterOpen={setFilterOpen} filterOpen={filterOpen}/>
+    <FilterModal collections={collections} setFilterOpen={setFilterOpen} filterOpen={filterOpen}/>
     </>
   )
 }
