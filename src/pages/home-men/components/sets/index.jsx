@@ -15,20 +15,6 @@ function Sets() {
     dispatch(getSetsList());
   }, []);
 
-  // const viewSize = () => {
-  //   if (width <= 768) {
-  //     2
-  //   }
-  //   else if (width >= 440) {
-  //     1
-  //   }
-  //   else {
-  //     4
-  //   }
-  // }
-
-
-
   return (
     <section className="sets">
       <div className="sets-title">
@@ -43,8 +29,8 @@ function Sets() {
           "--swiper-navigation-size": "20px",
         }}
         spaceBetween={30}
-        slidesPerGroup={width >= 768 ? 1 : 2}
-        slidesPerView={width >= 768 ? 4 : width >= 440 ? 1 : 2}
+        slidesPerGroup={width >= 768 ? 2 : 1}
+        slidesPerView={width >= 768 ? 4 : width >= 440 ? 2 : 1}
         loop={true}
         pagination={{
           clickable: true

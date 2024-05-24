@@ -1,13 +1,30 @@
-import { CartIcon, LogoIcon, MenuIcon, SearchIcon, UserIcon } from '../../assets/icons'
+import { CartIcon, CloseIcon, LogoIcon, MenuIcon, SearchIcon, UserIcon } from '../../assets/icons'
 import { Link, useLocation } from 'react-router-dom'
 import { category } from '../../utils/routes'
 import Categories from '../categories/Categories'
 import { useSelector } from 'react-redux'
 
-function Header({ setModalOpen }) {
+function Header({ menuOpen, setMenuOpen, modalOpen, setModalOpen }) {
   const { items } = useSelector(state => state.cart)
   const location = useLocation()
   const path = location.pathname.split('').slice(0, 11).join('')
+
+  const handleCart = () => {
+    if (!modalOpen) {
+      setMenuOpen(false)
+      setModalOpen(true)
+    }
+  }
+
+  const handleMenu = () => {
+    if (menuOpen) {
+      setMenuOpen(false)
+    }
+    else {
+      setMenuOpen(true)
+    }
+  }
+
   return (
     <>
       <header className='header'>
@@ -20,8 +37,8 @@ function Header({ setModalOpen }) {
                 ))
               }
 
-              <button className='header-button__menu'>
-                <MenuIcon />
+              <button onClick={handleMenu} className='header-button__menu'>
+                {menuOpen ? <CloseIcon /> : <MenuIcon />}
               </button>
             </div>
             <div className="header-logo">
@@ -32,7 +49,7 @@ function Header({ setModalOpen }) {
             <div className="header-buttons">
               <button className='header-button'><SearchIcon /></button>
               <button className='header-button'><UserIcon /></button>
-              <button onClick={() => setModalOpen(true)} className='header-button'><CartIcon />
+              <button onClick={handleCart} className='header-button'><CartIcon />
                 {
                   items.length > 0 && <span className='header-button__span'>{items.length}</span>
                 }

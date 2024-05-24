@@ -18,7 +18,7 @@ function Category() {
       </div>
       <div className="categories-content">
         {category.list.map((item, i) => (
-          <div className="categories-item">
+          <div key={i} className="categories-item">
             <div className="categories-item__image">
               <img
                 className="categories-item__image__img"
