@@ -35,6 +35,11 @@
       font-size: 20px;
       margin-bottom: 16px;
     }
+
+    @include media (375) {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
   }
 
   &-content {
