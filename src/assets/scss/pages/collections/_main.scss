@@ -114,17 +114,17 @@
 
     @include media(440) {
       max-width: 180px;
-      max-height: 260px;
+      max-height: 280px;
     }
 
     @include media(400) {
       max-width: 160px;
-      max-height: 200px;
+      max-height: 250px;
     }
 
     @include media(375) {
       max-width: 140px;
-      max-height: 180px;
+      max-height: 230px;
     }
 
     &__row {
@@ -183,7 +183,7 @@
 
       @include media(440) {
         max-width: 180px;
-        max-height: 240px;
+        max-height: 220px;
       }
 
       @include media(400) {
@@ -252,7 +252,7 @@
 
         @include media(440) {
           max-width: 180px;
-          max-height: 240px;
+          max-height: 220px;
         }
 
         @include media(400) {
@@ -273,7 +273,7 @@
       font-weight: 400;
       margin-top: 10px;
 
-      @include media(440) {
+      @include media(460) {
         font-size: 10px;
       }
     }
@@ -283,7 +283,7 @@
       font-size: 12px;
       font-weight: 600;
 
-      @include media(440) {
+      @include media(460) {
         font-size: 10px;
         padding-left: 6px;
       }
@@ -295,7 +295,7 @@
       font-weight: 400;
       margin-top: 2px;
 
-      @include media(440) {
+      @include media(460) {
         font-size: 10px;
       }
 
