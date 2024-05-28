@@ -33,7 +33,7 @@ body {
 
 .main {
   flex: 1 1 auto;
-  position: relative;
+  // position: relative;
 }
 
 .wrapper:has(.modal.active) {

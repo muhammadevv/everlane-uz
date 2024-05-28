@@ -3,31 +3,30 @@
   padding: 60px 20px 20px 20px;
   background-color: $gray-100;
   position: relative;
-  top: 400px;
 
-  @include media(1024) {
-    top: 500px;
-  }
+  // @include media(1024) {
+  //   top: 500px;
+  // }
 
-  @include media(900) {
-    top: 200px;
-  }
+  // @include media(900) {
+  //   top: 200px;
+  // }
 
-  @include media(840) {
-    top: 740px;
-  }
+  // @include media(840) {
+  //   top: 740px;
+  // }
 
-  @include media(768) {
-    top: 600px;
-  }
+  // @include media(768) {
+  //   top: 600px;
+  // }
 
-  @include media(440) {
-    padding-top: 40px;
-  }
+  // @include media(440) {
+  //   padding-top: 40px;
+  // }
 
-  @include media(400) {
-    top: 1000px;
-  }
+  // @include media(400) {
+  //   top: 1000px;
+  // }
 
   &-content {
     @include flex(unset, space-between);
@@ -46,7 +45,7 @@
     }
 
     @include media(375) {
-      // grid-template-columns: repeat(1, 100%);
+      grid-template-columns: repeat(1, 100%);
     }
   }
 
